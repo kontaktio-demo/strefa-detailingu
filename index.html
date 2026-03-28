@@ -3,256 +3,851 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IRON GARAGE — Mechanika Pojazdowa</title>
+  <title>IRON GARAGE — Profesjonalna Mechanika Samochodowa</title>
 
-  <!-- SEO -->
-  <meta name="description" content="IRON GARAGE – profesjonalna mechanika pojazdowa. Diagnostyka, serwis, tuning, naprawy premium.">
-  <meta name="keywords" content="mechanik, serwis samochodowy, diagnostyka, tuning, warsztat">
+  <meta name="description" content="Iron Garage &#8211; profesjonalny warsztat samochodowy w Warszawie. Diagnostyka komputerowa, mechanika, serwis olejowy, hamulce, klimatyzacja, elektryk. Uczciwe ceny, szybka naprawa.">
+  <meta name="keywords" content="mechanik warszawa, serwis samochodowy, diagnostyka komputerowa, naprawa auta, hamulce, zawieszenie, olej, klimatyzacja, elektryk samochodowy, warsztat">
   <meta name="author" content="Kontaktio">
 
-  <!-- Fonts -->
+  <meta property="og:title" content="IRON GARAGE — Profesjonalna Mechanika Samochodowa">
+  <meta property="og:description" content="Twoje auto w dobrych r&#281;kach. Diagnostyka, naprawa, serwis &#8212; uczciwe ceny, gwarancja jako&#347;ci.">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-    <text y='.9em' font-size='90'>🛠️</text>
-  </svg>">
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;&#128295;&lt;/text&gt;&lt;/svg&gt;">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Iron Garage",
+    "description": "Profesjonalny warsztat samochodowy &#8212; diagnostyka, mechanika, serwis",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Stalowa 12",
+      "addressLocality": "Warszawa",
+      "addressCountry": "PL"
+    },
+    "telephone": "+48700000000",
+    "email": "serwis@irongarage.pl",
+    "openingHours": ["Mo-Fr 08:00-18:00","Sa 09:00-14:00"],
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 
 <body>
 
 <!-- PRELOADER -->
-<div id="preloader">
-  <div class="loader-gear"></div>
-  <span>URUCHAMIANIE SYSTEMU…</span>
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div class="loader-gear"></div>
+    <div class="loader-text">IRON<span>GARAGE</span></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
 </div>
 
 <!-- NAVBAR -->
-<header class="navbar">
-  <div class="logo">
+<header class="navbar" id="navbar">
+  <a href="#hero" class="logo" aria-label="Iron Garage &#8212; strona g&#322;&#243;wna">
     <strong>IRON</strong><span>GARAGE</span>
-  </div>
+  </a>
 
-  <nav>
-    <a href="#hero">Start</a>
-    <a href="#about">O warsztacie</a>
-    <a href="#services">Usługi</a>
-    <a href="#process">Jak pracujemy</a>
-    <a href="#gallery">Realizacje</a>
-    <a href="#contact">Kontakt</a>
+  <nav class="nav-menu" id="navMenu" aria-label="Nawigacja g&#322;&#243;wna">
+    <a href="#about"        class="nav-link">O warsztacie</a>
+    <a href="#services"     class="nav-link">Us&#322;ugi</a>
+    <a href="#process"      class="nav-link">Jak pracujemy</a>
+    <a href="#testimonials" class="nav-link">Opinie</a>
+    <a href="#faq"          class="nav-link">FAQ</a>
+    <a href="#contact"      class="nav-link">Kontakt</a>
   </nav>
 
-  <a href="#contact" class="btn btn-primary">Umów serwis</a>
+  <div class="nav-right">
+    <a href="tel:+48700000000" class="nav-phone">&#128222; 700 000 000</a>
+    <a href="#contact" class="btn btn-primary">Um&oacute;w serwis</a>
+  </div>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Otw&oacute;rz menu" aria-expanded="false" type="button">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 <!-- HERO -->
 <section id="hero" class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+  </div>
 
   <div class="hero-content">
-    <h1>
-      <span>MECHANIKA</span>
-      <strong>BEZ KOMPROMISÓW</strong>
+    <div class="hero-badge">&#127942; Warszawa &mdash; ponad 15 lat do&#347;wiadczenia</div>
+
+    <h1 class="hero-title">
+      <span class="hero-sub">MECHANIKA</span>
+      <strong>BEZ KOMPROMIS&Oacute;W</strong>
     </h1>
 
-    <p>
-      Diagnostyka. Naprawy. Serwis.  
-      Robimy auta tak, jakby były nasze.
+    <p class="hero-desc">
+      Diagnostyka. Naprawa. Serwis.<br>
+      Twoje auto w najlepszych r&#281;kach &mdash; gwarantujemy.
     </p>
 
     <div class="hero-actions">
-      <a href="#services" class="btn btn-primary">Sprawdź usługi</a>
-      <a href="#contact" class="btn btn-outline">Zgłoś problem</a>
+      <a href="#contact" class="btn btn-primary btn-lg">
+        <span>Um&oacute;w wizyt&#281;</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#services" class="btn btn-outline btn-lg">Sprawd&#378; us&#322;ugi</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <strong>15+</strong>
+        <span>lat do&#347;wiadczenia</span>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <strong>2&#160;000+</strong>
+        <span>zadowolonych klient&oacute;w</span>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <strong>48h</strong>
+        <span>max czas naprawy</span>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <strong>100%</strong>
+        <span>gwarancja jako&#347;ci</span>
+      </div>
     </div>
   </div>
 
-  <div class="scroll-indicator"></div>
+  <a href="#about" class="scroll-down" aria-label="Przewi&#324; w d&oacute;&#322;">
+    <div class="scroll-down-arrow" aria-hidden="true"></div>
+  </a>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar" aria-label="Nasze wyr&oacute;&#380;niki">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#9989;</span><span>Certyfikowani mechanicy</span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128269;</span><span>Diagnostyka komputerowa</span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128176;</span><span>Jasna wycena przed napraw&#261;</span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128737;</span><span>12 miesi&#281;cy gwarancji</span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128664;</span><span>Wszystkie marki i modele</span></div>
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section about">
-  <div class="container grid-2">
-    <div class="about-text">
-      <h2>O warsztacie</h2>
-      <p>
-        Iron Garage to niezależny warsztat samochodowy, który stawia na jakość,
-        rzetelną diagnostykę i uczciwe podejście.
-      </p>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual" data-animate>
+        <div class="about-img-wrap">
+          <div class="about-img-main" aria-hidden="true"></div>
+          <div class="about-img-accent" aria-hidden="true"></div>
+          <div class="about-badge-float">
+            <strong>15</strong>
+            <span>lat w bran&#380;y</span>
+          </div>
+        </div>
+      </div>
 
-      <p>
-        Nie wymieniamy części „na ślepo”.
-        Najpierw diagnoza. Potem decyzja. Potem robota.
-      </p>
+      <div class="about-text" data-animate>
+        <div class="label">O nas</div>
+        <h2>Warsztat, kt&oacute;ry szanuje Tw&oacute;j czas i pieni&#261;dze</h2>
 
-      <ul class="about-list">
-        <li>✔ Nowoczesna diagnostyka komputerowa</li>
-        <li>✔ Doświadczeni mechanicy</li>
-        <li>✔ Tylko sprawdzone części</li>
-        <li>✔ Jasna wycena przed naprawą</li>
-      </ul>
-    </div>
+        <p>Iron Garage to niezale&#380;ny warsztat samochodowy, kt&oacute;ry stawia na jako&#347;&#263;, rzeteeln&#261; diagnostyk&#281; i uczciwe podej&#347;cie do klienta. Dzia&#322;amy w Warszawie od ponad 15 lat.</p>
 
-    <div class="about-visual">
-      <div class="metal-card"></div>
-      <div class="metal-card accent"></div>
+        <p>Nie wymieniamy cz&#281;&#347;ci &bdquo;na &#347;lepo&rdquo; &mdash; najpierw precyzyjna diagnoza, potem jasna wycena, a dopiero na ko&#324;cu naprawa. &#379;adnych ukrytych koszt&oacute;w.</p>
+
+        <ul class="about-list">
+          <li>
+            <div class="about-list-icon" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>Nowoczesna diagnostyka komputerowa</strong>
+              <span>Sprz&#281;t klasy warsztatowej do wszystkich marek</span>
+            </div>
+          </li>
+          <li>
+            <div class="about-list-icon" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>Do&#347;wiadczeni, certyfikowani mechanicy</strong>
+              <span>Stale podnosz&#261;cy kwalifikacje specjali&#347;ci</span>
+            </div>
+          </li>
+          <li>
+            <div class="about-list-icon" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>Tylko oryginalne lub r&oacute;wnowa&#380;ne cz&#281;&#347;ci</strong>
+              <span>Z pe&#322;n&#261; gwarancj&#261; producenta</span>
+            </div>
+          </li>
+          <li>
+            <div class="about-list-icon" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>Transparentna komunikacja</strong>
+              <span>Informujemy na bie&#380;&#261;co o post&#281;pach prac</span>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary">Skontaktuj si&#281; z nami</a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="section services">
-  <h2 class="section-title">Zakres usług</h2>
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div class="label">Co robimy</div>
+      <h2 class="section-title">Pe&#322;en zakres us&#322;ug</h2>
+      <p class="section-desc">Kompleksowa obs&#322;uga ka&#380;dego pojazdu &mdash; od przegl&#261;du po powa&#380;ne naprawy</p>
+    </div>
 
-  <div class="services-grid">
-    <article class="service-card">
-      <div class="icon">🧠</div>
-      <h3>Diagnostyka</h3>
-      <p>Komputerowa i manualna diagnostyka usterek.</p>
-    </article>
+    <div class="services-grid">
+      <article class="service-card" data-animate>
+        <div class="service-icon" aria-hidden="true">&#128302;</div>
+        <h3>Diagnostyka komputerowa</h3>
+        <p>Odczyt kod&oacute;w b&#322;&#281;d&oacute;w, analiza parametr&oacute;w silnika, diagnostyka uk&#322;ad&oacute;w elektronicznych wszystkich marek.</p>
+        <div class="service-footer">
+          <span class="service-price">od 80 z&#322;</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
 
-    <article class="service-card featured">
-      <div class="icon">🔧</div>
-      <h3>Mechanika</h3>
-      <p>Silnik, zawieszenie, hamulce, układ napędowy.</p>
-    </article>
+      <article class="service-card featured" data-animate>
+        <div class="service-badge">Najcz&#281;&#347;tszy wyb&oacute;r</div>
+        <div class="service-icon" aria-hidden="true">&#128295;</div>
+        <h3>Mechanika og&oacute;lna</h3>
+        <p>Silnik, skrzynia bieg&oacute;w, uk&#322;ad nap&#281;dowy, sprz&#281;g&#322;o, rozrz&#261;d &mdash; kompleksowe naprawy ka&#380;dego uk&#322;adu.</p>
+        <div class="service-footer">
+          <span class="service-price">wycena indywidualna</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
 
-    <article class="service-card">
-      <div class="icon">⚙️</div>
-      <h3>Serwis</h3>
-      <p>Oleje, filtry, przeglądy okresowe.</p>
-    </article>
+      <article class="service-card" data-animate>
+        <div class="service-icon" aria-hidden="true">&#128760;</div>
+        <h3>Zawieszenie i uk&#322;ad kierowniczy</h3>
+        <p>Amortyzatory, wahacze, dr&#261;&#380;ki, &#322;o&#380;yska, zbie&#380;no&#347;&#263; &mdash; pe&#322;na diagnostyka i naprawa.</p>
+        <div class="service-footer">
+          <span class="service-price">od 150 z&#322;</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
 
-    <article class="service-card">
-      <div class="icon">🔥</div>
-      <h3>Tuning & mody</h3>
-      <p>Wydechy, zawieszenie, performance.</p>
-    </article>
+      <article class="service-card" data-animate>
+        <div class="service-icon" aria-hidden="true">&#128721;</div>
+        <h3>Uk&#322;ad hamulcowy</h3>
+        <p>Klocki, tarcze, cylindry, p&#322;yn hamulcowy &mdash; bezpiecze&#324;stwo Twojego auta na pierwszym miejscu.</p>
+        <div class="service-footer">
+          <span class="service-price">od 200 z&#322; / o&#347;</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
+
+      <article class="service-card" data-animate>
+        <div class="service-icon" aria-hidden="true">&#128260;</div>
+        <h3>Serwis olejowy i przegl&#261;dy</h3>
+        <p>Wymiana oleju, filtr&oacute;w, p&#322;yn&oacute;w, &#347;wiec. Przegl&#261;dy okresowe i przed zakupem u&#380;ywanego auta.</p>
+        <div class="service-footer">
+          <span class="service-price">od 120 z&#322;</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
+
+      <article class="service-card" data-animate>
+        <div class="service-icon" aria-hidden="true">&#10052;</div>
+        <h3>Klimatyzacja</h3>
+        <p>Serwis, uzupe&#322;nienie czynnika, dezynfekcja, diagnostyka i naprawa uk&#322;adu klimatyzacji.</p>
+        <div class="service-footer">
+          <span class="service-price">od 180 z&#322;</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
+
+      <article class="service-card" data-animate>
+        <div class="service-icon" aria-hidden="true">&#9889;</div>
+        <h3>Elektryk samochodowy</h3>
+        <p>Alternator, rozrusznik, instalacja elektryczna, diagnostyka CAN-bus, akumulator.</p>
+        <div class="service-footer">
+          <span class="service-price">od 100 z&#322;</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
+
+      <article class="service-card" data-animate>
+        <div class="service-icon" aria-hidden="true">&#128293;</div>
+        <h3>Tuning i performance</h3>
+        <p>Chip-tuning, wydechy, zawieszenie sportowe, do&#322;adowanie &mdash; dla wymagaj&#261;cych kierowc&oacute;w.</p>
+        <div class="service-footer">
+          <span class="service-price">wycena indywidualna</span>
+          <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
 <!-- PROCESS -->
 <section id="process" class="section process">
-  <h2 class="section-title">Jak pracujemy</h2>
-
-  <div class="process-steps">
-    <div class="step">
-      <span>01</span>
-      <h4>Diagnoza</h4>
-      <p>Sprawdzamy problem, bez zgadywania.</p>
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div class="label">Jak dzia&#322;amy</div>
+      <h2 class="section-title">Prosty proces, pewny wynik</h2>
+      <p class="section-desc">4 kroki od problemu do sprawnego auta</p>
     </div>
 
-    <div class="step">
-      <span>02</span>
-      <h4>Wycena</h4>
-      <p>Dostajesz jasną informację o kosztach.</p>
+    <div class="process-steps">
+      <div class="process-step" data-animate>
+        <div class="process-num" aria-hidden="true">01</div>
+        <div class="process-icon" aria-hidden="true">&#128222;</div>
+        <h4>Kontakt i ustalenia</h4>
+        <p>Opisujesz problem &mdash; telefonicznie lub przez formularz. Ustalamy termin oddania auta.</p>
+      </div>
+      <div class="process-connector" aria-hidden="true"></div>
+      <div class="process-step" data-animate>
+        <div class="process-num" aria-hidden="true">02</div>
+        <div class="process-icon" aria-hidden="true">&#128302;</div>
+        <h4>Precyzyjna diagnoza</h4>
+        <p>Sprawdzamy problem komputerowo i manualnie. &#379;adnych zgadywanek &mdash; tylko twarde dane.</p>
+      </div>
+      <div class="process-connector" aria-hidden="true"></div>
+      <div class="process-step" data-animate>
+        <div class="process-num" aria-hidden="true">03</div>
+        <div class="process-icon" aria-hidden="true">&#128172;</div>
+        <h4>Jasna wycena</h4>
+        <p>Dostajesz konkretn&#261; kwot&#281; przed jakkolwiek prac&#261;. Bez ukrytych koszt&oacute;w.</p>
+      </div>
+      <div class="process-connector" aria-hidden="true"></div>
+      <div class="process-step" data-animate>
+        <div class="process-num" aria-hidden="true">04</div>
+        <div class="process-icon" aria-hidden="true">&#9989;</div>
+        <h4>Naprawa i odbi&oacute;r</h4>
+        <p>Robimy robot&#281; porz&#261;dnie, na czas. Testujesz auto i odbierasz ze &#347;wiadomo&#347;ci&#261;, &#380;e jest sprawne.</p>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="step">
-      <span>03</span>
-      <h4>Naprawa</h4>
-      <p>Robota wykonana porządnie, bez fuszerki.</p>
+<!-- WHY US -->
+<section class="section why-us">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div class="label">Dlaczego my</div>
+      <h2 class="section-title">Co nas wyr&oacute;&#380;nia</h2>
     </div>
+    <div class="why-grid">
+      <div class="why-card" data-animate>
+        <div class="why-icon" aria-hidden="true">&#127942;</div>
+        <h4>15 lat na rynku</h4>
+        <p>Do&#347;wiadczenie, kt&oacute;rego nie da si&#281; kupi&#263;. Widzieli&#347;my ka&#380;dy mo&#380;liwy problem z autem.</p>
+      </div>
+      <div class="why-card" data-animate>
+        <div class="why-icon" aria-hidden="true">&#128176;</div>
+        <h4>Uczciwe ceny</h4>
+        <p>Wyceniamy przed napraw&#261;. Cena, kt&oacute;r&#261; s&#322;yszysz, to cena, kt&oacute;r&#261; p&#322;acisz.</p>
+      </div>
+      <div class="why-card" data-animate>
+        <div class="why-icon" aria-hidden="true">&#9889;</div>
+        <h4>Ekspresowe naprawy</h4>
+        <p>Wi&#281;kszo&#347;&#263; usterek usuwamy w ci&#261;gu dnia. Wiemy, &#380;e auto jest Ci potrzebne.</p>
+      </div>
+      <div class="why-card" data-animate>
+        <div class="why-icon" aria-hidden="true">&#128241;</div>
+        <h4>Komunikacja na bie&#380;&#261;co</h4>
+        <p>SMS i telefon z aktualizacjami. Zawsze wiesz, co dzieje si&#281; z Twoim autem.</p>
+      </div>
+      <div class="why-card" data-animate>
+        <div class="why-icon" aria-hidden="true">&#128737;</div>
+        <h4>Gwarancja na us&#322;ugi</h4>
+        <p>12 miesi&#281;cy gwarancji na wykonane naprawy. Co&#347; nie gra? Wr&oacute;&#263; &mdash; naprawimy.</p>
+      </div>
+      <div class="why-card" data-animate>
+        <div class="why-icon" aria-hidden="true">&#128664;</div>
+        <h4>Wszystkie marki</h4>
+        <p>Audi, BMW, Mercedes, VAG, Ford, Toyota, Opel &mdash; serwisujemy ka&#380;dy pojazd.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="step">
-      <span>04</span>
-      <h4>Test</h4>
-      <p>Auto wraca sprawne, gotowe do jazdy.</p>
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section testimonials">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div class="label">Opinie klient&oacute;w</div>
+      <h2 class="section-title">Co m&oacute;wi&#261; o nas</h2>
+      <p class="section-desc">Ponad 2000 zadowolonych klient&oacute;w &mdash; sprawd&#378;, dlaczego nam ufaj&#261;</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card" data-animate>
+        <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&bdquo;Przywieli&#347;my Passata z problemem z silnikiem, kt&oacute;ry inny warsztat naprawia&#322; ju&#380; dwa razy. Iron Garage znalaz&#322; prawdziwy problem w ci&#261;gu godziny. Uczciwie, szybko i w dobrej cenie.&rdquo;</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">MK</div>
+          <div><strong>Marek K.</strong><span>Volkswagen Passat B8</span></div>
+        </div>
+      </div>
+      <div class="review-card" data-animate>
+        <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&bdquo;Najlepszy warsztat w jakim by&#322;am. Zadzwoni&#322;am z pytaniem o klimatyzacj&#281;, dosta&#322;am konkretn&#261; odpowied&#378; i termin na nast&#281;pny dzie&#324;. Auto gotowe o czasie, cena zgodna z wycen&#261;.&rdquo;</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">AW</div>
+          <div><strong>Anna W.</strong><span>Skoda Octavia IV</span></div>
+        </div>
+      </div>
+      <div class="review-card" data-animate>
+        <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&bdquo;Polecam ka&#380;demu. M&oacute;j BMW E46 to stary zawodnik, ale mechanicy znaj&#261; go od &#347;rodka. Diagnoza, rozrz&#261;d i regulacja &mdash; wszystko zrobione porz&#261;dnie. Jedyne miejsce, kt&oacute;remu ufam.&rdquo;</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">PT</div>
+          <div><strong>Piotr T.</strong><span>BMW E46 330i</span></div>
+        </div>
+      </div>
+      <div class="review-card" data-animate>
+        <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&bdquo;Sprawdzali auto przed zakupem &mdash; wy&#322;apali usterki, kt&oacute;rych bym nie zauwa&#380;y&#322;. Zaoszcz&#281;dzi&#322;em mnóstwo pieni&#281;dzy. Teraz m&oacute;j Audi jest ju&#380; u nich regularnie na serwisie.&rdquo;</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">RM</div>
+          <div><strong>Robert M.</strong><span>Audi A4 B9</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-summary" data-animate>
+      <div class="reviews-rating">
+        <span class="rating-num" aria-label="Ocena 4.9">4.9</span>
+        <div>
+          <div class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span>&#346;rednia ocena Google</span>
+        </div>
+      </div>
+      <div class="reviews-count">
+        <strong>150+</strong>
+        <span>opinii w Google Maps</span>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery" class="section gallery">
-  <h2 class="section-title">Realizacje</h2>
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div class="label">Nasze realizacje</div>
+      <h2 class="section-title">Galeria prac</h2>
+      <p class="section-desc">Cz&#281;&#347;&#263; z tego, co zrobili&#347;my &mdash; ka&#380;de auto wysz&#322;o od nas sprawne</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-animate>
+        <div class="gallery-overlay"><span>Wymiana rozrz&#261;du</span><small>BMW 3.0d</small></div>
+      </div>
+      <div class="gallery-item wide" data-animate>
+        <div class="gallery-overlay"><span>Regeneracja silnika</span><small>Mercedes C-Class W205</small></div>
+      </div>
+      <div class="gallery-item" data-animate>
+        <div class="gallery-overlay"><span>Serwis klimatyzacji</span><small>Audi A6 C7</small></div>
+      </div>
+      <div class="gallery-item tall" data-animate>
+        <div class="gallery-overlay"><span>Naprawa zawieszenia</span><small>VW Golf VII GTI</small></div>
+      </div>
+      <div class="gallery-item" data-animate>
+        <div class="gallery-overlay"><span>Chip-tuning</span><small>Ford Focus ST</small></div>
+      </div>
+      <div class="gallery-item" data-animate>
+        <div class="gallery-overlay"><span>Serwis hamulc&oacute;w</span><small>Toyota Corolla XII</small></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <div class="gallery-grid">
-    <div class="gallery-item"></div>
-    <div class="gallery-item wide"></div>
-    <div class="gallery-item"></div>
-    <div class="gallery-item tall"></div>
-    <div class="gallery-item"></div>
-    <div class="gallery-item"></div>
+<!-- FAQ -->
+<section id="faq" class="section faq">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div class="label">Najcz&#281;&#347;tsze pytania</div>
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-desc">Odpowiedzi na pytania, kt&oacute;re s&#322;yszymy najcz&#281;&#347;ciej</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" data-animate>
+        <button class="faq-question" aria-expanded="false" type="button">
+          Ile kosztuje diagnostyka?
+          <span class="faq-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Podstawowa diagnostyka komputerowa (odczyt b&#322;&#281;d&oacute;w) kosztuje od 80 z&#322;. Rozszerzona diagnostyka konkretnego uk&#322;adu mo&#380;e kosztowa&#263; wi&#281;cej &mdash; zawsze podajemy cen&#281; przed przyst&#261;pieniem do pracy.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" aria-expanded="false" type="button">
+          Jak d&#322;ugo trwa naprawa?
+          <span class="faq-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Wi&#281;kszo&#347;&#263; standardowych napraw (hamulce, olej, filtry, klimatyzacja) wykonujemy w tym samym dniu. Przy powa&#380;niejszych pracach (silnik, skrzynia) ustalamy termin indywidualnie &mdash; zazwyczaj 1&ndash;3 dni robocze.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" aria-expanded="false" type="button">
+          Czy dajecie gwarancj&#281; na naprawy?
+          <span class="faq-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Tak, udzielamy 12-miesi&#281;cznej gwarancji na wszystkie wykonane prace oraz cz&#281;&#347;ci zamienne. W przypadku jakichkolwiek problem&oacute;w &mdash; wr&oacute;&#263; do nas, naprawimy bezp&#322;atnie.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" aria-expanded="false" type="button">
+          Czy sprawdzacie auta przed zakupem?
+          <span class="faq-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Tak, oferujemy przegl&#261;d przedkupowy. Sprawdzamy stan techniczny, histori&#281; napraw, &#347;lady wypadk&oacute;w i ukryte usterki. Us&#322;uga kosztuje od 200 z&#322; i mo&#380;e zaoszcz&#281;dzi&#263; Ci tysi&#261;ce z&#322;otych.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" aria-expanded="false" type="button">
+          Jakie marki serwisujecie?
+          <span class="faq-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Serwisujemy wszystkie popularne marki: Volkswagen, Audi, BMW, Mercedes, Ford, Toyota, Skoda, Opel, Renault, Peugeot i wiele innych. Mamy odpowiedni sprz&#281;t diagnostyczny do ka&#380;dej marki.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" aria-expanded="false" type="button">
+          Czy mog&#281; zostawi&#263; auto i odebra&#263; p&oacute;&#378;niej?
+          <span class="faq-arrow" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Oczywi&#347;cie. Mo&#380;esz zostawi&#263; auto rano, a odebra&#263; po pracy. Mamy te&#380; mo&#380;liwo&#347;&#263; pozostawienia auta przez weekend. Dzwonimy lub wysy&#322;amy SMS, gdy auto jest gotowe do odbioru.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
-  <h2>Masz problem z autem?</h2>
-  <p>Nie kombinuj. Przyjedź. Sprawdzimy.</p>
-  <a href="#contact" class="btn btn-primary">Umów wizytę</a>
+  <div class="cta-bg" aria-hidden="true"><div class="cta-glow"></div></div>
+  <div class="container">
+    <div class="cta-content" data-animate>
+      <div class="cta-icon" aria-hidden="true">&#128680;</div>
+      <h2>Co&#347; nie gra z autem?</h2>
+      <p>Nie ryzykuj. Ka&#380;da zw&#322;oka mo&#380;e kosztowa&#263; wi&#281;cej. Zadzwo&#324; lub napisz &mdash; odpowiemy b&#322;yskawicznie.</p>
+      <div class="cta-actions">
+        <a href="tel:+48700000000" class="btn btn-white">&#128222; Zadzwo&#324; teraz</a>
+        <a href="#contact" class="btn btn-outline-white">Wy&#347;lij zg&#322;oszenie online</a>
+      </div>
+      <div class="cta-info">
+        <span>Pon&ndash;Pt 8:00&ndash;18:00</span>
+        <span aria-hidden="true">&bull;</span>
+        <span>Sob 9:00&ndash;14:00</span>
+        <span aria-hidden="true">&bull;</span>
+        <span>Dost&#281;pni w nag&#322;ych przypadkach</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section contact">
-  <div class="container grid-2">
-    <div class="contact-info">
-      <h2>Kontakt</h2>
-      <p>📍 Warszawa</p>
-      <p>📞 +48 700 000 000</p>
-      <p>📧 serwis@irongarage.pl</p>
-      <p>🕒 Pon–Pt 8:00–18:00</p>
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div class="label">Skontaktuj si&#281;</div>
+      <h2 class="section-title">Um&oacute;w serwis</h2>
+      <p class="section-desc">Wype&#322;nij formularz lub zadzwo&#324; &mdash; oddzwonimy w ci&#261;gu godziny</p>
     </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Imię">
-      <input type="tel" placeholder="Telefon">
-      <textarea placeholder="Opisz problem z autem"></textarea>
-      <button type="submit" class="btn btn-primary">Wyślij zgłoszenie</button>
-    </form>
+    <div class="contact-grid">
+      <div class="contact-info" data-animate>
+        <div class="contact-info-card">
+          <h3>Dane kontaktowe</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">&#128205;</div>
+            <div>
+              <strong>Adres</strong>
+              <span>ul. Stalowa 12, Warszawa</span>
+              <small>Wjazd od ulicy Bocznej</small>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">&#128222;</div>
+            <div>
+              <strong>Telefon</strong>
+              <a href="tel:+48700000000">+48 700 000 000</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">&#128231;</div>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:serwis@irongarage.pl">serwis@irongarage.pl</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">&#128336;</div>
+            <div>
+              <strong>Godziny otwarcia</strong>
+              <span>Pon&ndash;Pt: 8:00&ndash;18:00</span>
+              <span>Sobota: 9:00&ndash;14:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-placeholder" aria-label="Otw&oacute;rz map&#281; w Google Maps">
+            <span aria-hidden="true">&#128506;</span>
+            <p>ul. Stalowa 12, Warszawa</p>
+            <small>Kliknij, aby otworzy&#263; w Google Maps</small>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap" data-animate>
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Wy&#347;lij zg&#322;oszenie</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Imi&#281; i nazwisko *</label>
+              <input type="text" id="name" name="name" placeholder="Jan Kowalski" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+48 700 000 000" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="jan@example.pl" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="car">Marka i model auta</label>
+            <input type="text" id="car" name="car" placeholder="np. VW Golf VII 2.0 TDI 2018">
+          </div>
+          <div class="form-group">
+            <label for="service">Rodzaj us&#322;ugi</label>
+            <select id="service" name="service">
+              <option value="">Wybierz us&#322;ug&#281;&hellip;</option>
+              <option>Diagnostyka komputerowa</option>
+              <option>Mechanika og&oacute;lna</option>
+              <option>Zawieszenie i uk&#322;ad kierowniczy</option>
+              <option>Uk&#322;ad hamulcowy</option>
+              <option>Serwis olejowy / przegl&#261;d</option>
+              <option>Klimatyzacja</option>
+              <option>Elektryk samochodowy</option>
+              <option>Tuning i performance</option>
+              <option>Inne</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Opis problemu *</label>
+            <textarea id="message" name="message" placeholder="Opisz problem lub us&#322;ug&#281;, kt&oacute;r&#261; chcesz zam&oacute;wi&#263;&hellip;" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Wy&#347;lij zg&#322;oszenie</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p class="form-note">* Pola wymagane. Oddzwonimy w ci&#261;gu godziny w godzinach otwarcia.</p>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>
-    © 2026 IRON GARAGE  
-    <br>
-    Strona demonstracyjna — Kontaktio 2026
-  </p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" aria-label="Iron Garage">
+          <strong>IRON</strong><span>GARAGE</span>
+        </a>
+        <p>Profesjonalny warsztat samochodowy w Warszawie. Rzetelna diagnostyka, uczciwe ceny, gwarancja jako&#347;ci.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">ig</a>
+          <a href="#" class="social-link" aria-label="Google Maps">G</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Us&#322;ugi</h4>
+        <ul>
+          <li><a href="#services">Diagnostyka komputerowa</a></li>
+          <li><a href="#services">Mechanika og&oacute;lna</a></li>
+          <li><a href="#services">Zawieszenie</a></li>
+          <li><a href="#services">Hamulce</a></li>
+          <li><a href="#services">Klimatyzacja</a></li>
+          <li><a href="#services">Elektryk</a></li>
+          <li><a href="#services">Tuning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informacje</h4>
+        <ul>
+          <li><a href="#about">O warsztacie</a></li>
+          <li><a href="#process">Jak pracujemy</a></li>
+          <li><a href="#testimonials">Opinie klient&oacute;w</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul class="footer-contact-list">
+          <li>&#128205; ul. Stalowa 12, Warszawa</li>
+          <li><a href="tel:+48700000000">&#128222; +48 700 000 000</a></li>
+          <li><a href="mailto:serwis@irongarage.pl">&#128231; serwis@irongarage.pl</a></li>
+          <li>&#128336; Pon&ndash;Pt 8:00&ndash;18:00</li>
+          <li>&#128336; Sob 9:00&ndash;14:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 IRON GARAGE. Wszelkie prawa zastrze&#380;one.</p>
+      <p class="footer-demo">Strona demonstracyjna &mdash; <a href="https://kontaktio.pl">Kontaktio 2026</a></p>
+    </div>
+  </div>
 </footer>
 
-<!-- SCRIPTS -->
+<!-- PAGE SCRIPTS -->
 <script>
-  window.addEventListener("load", () => {
+(function () {
+  "use strict";
+
+  window.addEventListener("load", function () {
     document.body.classList.add("loaded");
   });
-</script>
-<style>
-/* =========================================================
-   KONTAKTIO – IRON GARAGE WOW SKIN
-   Black / Red / Mechanic / Premium Glass
-   ========================================================= */
 
+  var navbar = document.getElementById("navbar");
+  function updateNavbar() {
+    if (navbar) navbar.classList.toggle("scrolled", window.scrollY > 40);
+  }
+  window.addEventListener("scroll", updateNavbar, { passive: true });
+
+  var navToggle = document.getElementById("navToggle");
+  var navMenu   = document.getElementById("navMenu");
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = navMenu.classList.toggle("open");
+      navToggle.classList.toggle("open", isOpen);
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+      document.body.style.overflow = isOpen ? "hidden" : "";
+    });
+    navMenu.querySelectorAll(".nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navMenu.classList.remove("open");
+        navToggle.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      });
+    });
+    document.addEventListener("click", function (e) {
+      if (navMenu.classList.contains("open") &&
+          !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navMenu.classList.remove("open");
+        navToggle.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      }
+    });
+  }
+
+  var animEls = document.querySelectorAll("[data-animate]");
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+    animEls.forEach(function (el) { observer.observe(el); });
+  } else {
+    animEls.forEach(function (el) { el.classList.add("visible"); });
+  }
+
+  document.querySelectorAll(".faq-item").forEach(function (item) {
+    var btn    = item.querySelector(".faq-question");
+    var answer = item.querySelector(".faq-answer");
+    if (!btn || !answer) return;
+    btn.addEventListener("click", function () {
+      var isOpen = item.classList.contains("open");
+      document.querySelectorAll(".faq-item.open").forEach(function (openItem) {
+        openItem.classList.remove("open");
+        openItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+        openItem.querySelector(".faq-answer").hidden = true;
+      });
+      if (!isOpen) {
+        item.classList.add("open");
+        btn.setAttribute("aria-expanded", "true");
+        answer.hidden = false;
+      }
+    });
+  });
+
+  var form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Basic validation
+      var name    = form.querySelector("#name");
+      var phone   = form.querySelector("#phone");
+      var message = form.querySelector("#message");
+      var valid   = true;
+
+      [name, phone, message].forEach(function (field) {
+        if (!field) return;
+        var ok = field.value.trim().length > 0;
+        field.style.borderColor = ok ? "" : "var(--red)";
+        if (!ok) valid = false;
+      });
+
+      if (!valid) return;
+
+      var btn  = form.querySelector("button[type='submit']");
+      var span = btn.querySelector("span");
+      if (span) span.textContent = "Wysłano! Oddzwonimy wkrótce ✓";
+      btn.disabled = true;
+      btn.style.background = "linear-gradient(135deg,#16a34a,#15803d)";
+    });
+  }
+})();
+</script>
+
+<!-- KONTAKTIO WIDGET SKIN -->
+<style>
+/* Kontaktio widget theme — Iron Garage */
 :root {
-  --k-accent: #ff1a1a;      /* strong red */
-  --k-accent2: #990000;     /* dark red */
-  --k-glass: rgba(18, 18, 18, 0.85);
-  --k-glass-soft: rgba(12, 12, 12, 0.45);
-  --k-border: rgba(255, 255, 255, 0.12);
-  --k-text: rgba(255, 255, 255, 0.94);
-  --k-muted: rgba(255, 255, 255, 0.65);
+  --k-accent:  #ff1a1a;
+  --k-accent2: #990000;
+  --k-glass:   rgba(18, 18, 18, .88);
+  --k-border:  rgba(255, 255, 255, .12);
+  --k-text:    rgba(255, 255, 255, .94);
+  --k-muted:   rgba(255, 255, 255, .65);
 }
 
-/* ===============================
-   LAUNCHER (Floating Button)
-=============================== */
 .kontaktio-launcher {
   width: 64px !important;
   height: 64px !important;
   border-radius: 999px !important;
-  background:
-    radial-gradient(circle at 30% 30%, var(--k-accent), var(--k-accent2)) !important;
-  border: 1px solid rgba(255,255,255,.22) !important;
-  box-shadow:
-    0 22px 70px rgba(0,0,0,.75),
-    0 0 0 14px rgba(255,26,26,.22),
-    0 0 0 30px rgba(153,0,0,.12) !important;
+  background: radial-gradient(circle at 30% 30%, var(--k-accent), var(--k-accent2)) !important;
+  border: 1px solid rgba(255, 255, 255, .22) !important;
+  box-shadow: 0 22px 70px rgba(0,0,0,.75), 0 0 0 14px rgba(255,26,26,.2), 0 0 0 30px rgba(153,0,0,.1) !important;
   position: fixed !important;
   bottom: 28px !important;
   right: 28px !important;
@@ -261,174 +856,91 @@
   cursor: pointer;
   transition: transform .25s ease;
 }
-
-.kontaktio-launcher:hover {
-  transform: translateY(-4px) scale(1.05);
-}
-
+.kontaktio-launcher:hover { transform: translateY(-4px) scale(1.05); }
 .kontaktio-launcher::before {
   content: "";
   position: absolute;
   inset: -45%;
-  background:
-    radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.35), transparent 60%),
-    radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.12), transparent 62%);
+  background: radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.35), transparent 60%),
+              radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.12), transparent 62%);
   filter: blur(8px);
   animation: kontaktioAurora 6.5s ease-in-out infinite;
 }
-
 .kontaktio-launcher::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 999px;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,.15), transparent 60%);
+  background: linear-gradient(135deg, rgba(255,255,255,.15), transparent 60%);
   opacity: .35;
 }
+.kontaktio-launcher > div { position: relative; z-index: 2; font-size: 26px; font-weight: 900; color: #fff; }
 
-.kontaktio-launcher > div {
-  position: relative;
-  z-index: 2;
-  font-size: 26px;
-  font-weight: 900;
-  color: #ffffff;
-}
-
-/* ===============================
-   WIDGET CONTAINER
-=============================== */
 .kontaktio-widget {
   border-radius: 24px !important;
   border: 1px solid var(--k-border) !important;
   background: var(--k-glass) !important;
   backdrop-filter: blur(28px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
-  box-shadow:
-    0 32px 110px rgba(0,0,0,.75),
-    0 1px 0 rgba(255,255,255,.08) inset !important;
+  box-shadow: 0 32px 110px rgba(0,0,0,.75), 0 1px 0 rgba(255,255,255,.08) inset !important;
   position: fixed !important;
   bottom: 110px !important;
   right: 28px !important;
   z-index: 999999 !important;
   overflow: hidden;
 }
-
 .kontaktio-widget::before {
   content: "";
   position: absolute;
   inset: -60px;
-  background:
-    radial-gradient(700px 480px at 20% 10%, rgba(255,26,26,.28), transparent 60%),
-    radial-gradient(620px 520px at 90% 0%, rgba(153,0,0,.24), transparent 58%),
-    radial-gradient(680px 560px at 30% 110%, rgba(255,26,26,.18), transparent 55%);
+  background: radial-gradient(700px 480px at 20% 10%, rgba(255,26,26,.28), transparent 60%),
+              radial-gradient(620px 520px at 90% 0%,  rgba(153,0,0,.24),  transparent 58%),
+              radial-gradient(680px 560px at 30% 110%,rgba(255,26,26,.18), transparent 55%);
   filter: blur(28px);
   pointer-events: none;
   animation: kontaktioAurora 9s ease-in-out infinite;
 }
-
-/* ===============================
-   HEADER
-=============================== */
 .kontaktio-header {
-  background:
-    linear-gradient(180deg, rgba(12,12,12,.65), rgba(12,12,12,.25)) !important;
+  background: linear-gradient(180deg, rgba(12,12,12,.65), rgba(12,12,12,.25)) !important;
   color: var(--k-text) !important;
   border-bottom: 1px solid rgba(255,255,255,.12);
 }
-
-.kontaktio-header-sub {
-  color: var(--k-muted) !important;
-}
-
-/* ===============================
-   CHAT BUBBLES
-=============================== */
+.kontaktio-header-sub { color: var(--k-muted) !important; }
 .kontaktio-bubble {
   border-radius: 18px !important;
   font-size: 14.5px !important;
   line-height: 1.5 !important;
-  box-shadow:
-    0 18px 50px rgba(0,0,0,.35),
-    0 1px 0 rgba(255,255,255,.06) inset !important;
+  box-shadow: 0 18px 50px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.06) inset !important;
 }
-
-.kontaktio-row.bot .kontaktio-bubble {
-  background: rgba(255,255,255,.08) !important;
-  color: var(--k-text) !important;
-  border: 1px solid rgba(255,255,255,.14);
-}
-
-.kontaktio-row.user .kontaktio-bubble {
-  background:
-    linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important;
-  color: #ffffff !important;
-  font-weight: 700;
-}
-
-/* ===============================
-   INPUT AREA
-=============================== */
-.kontaktio-inputwrap {
-  background:
-    linear-gradient(180deg, rgba(12,12,12,.18), rgba(12,12,12,.38)) !important;
-  border-top: 1px solid rgba(255,255,255,.12);
-}
-
-.kontaktio-input {
-  background: rgba(255,255,255,.12) !important;
-  color: var(--k-text) !important;
-  border: 1px solid rgba(255,255,255,.18) !important;
-}
-
-.kontaktio-input::placeholder {
-  color: rgba(255,255,255,.55);
-}
-
-.kontaktio-send {
-  background:
-    linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255,255,255,.22);
-  font-weight: 800;
-  box-shadow: 0 12px 40px rgba(255,26,26,.35);
-}
-
-/* ===============================
-   AURORA ANIMATION
-=============================== */
+.kontaktio-row.bot  .kontaktio-bubble { background: rgba(255,255,255,.08) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.14); }
+.kontaktio-row.user .kontaktio-bubble { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; font-weight: 700; }
+.kontaktio-inputwrap { background: linear-gradient(180deg, rgba(12,12,12,.18), rgba(12,12,12,.38)) !important; border-top: 1px solid rgba(255,255,255,.12); }
+.kontaktio-input     { background: rgba(255,255,255,.12) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.18) !important; }
+.kontaktio-input::placeholder { color: rgba(255,255,255,.55); }
+.kontaktio-send      { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; border: 1px solid rgba(255,255,255,.22); font-weight: 800; box-shadow: 0 12px 40px rgba(255,26,26,.35); }
 @keyframes kontaktioAurora {
-  0%   { transform: translate(0,0) scale(1); }
-  50%  { transform: translate(14px,-12px) scale(1.05); }
-  100% { transform: translate(0,0) scale(1); }
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(14px, -12px) scale(1.05); }
+  100% { transform: translate(0, 0) scale(1); }
 }
-
 @media (prefers-reduced-motion: reduce) {
-  .kontaktio-widget::before,
-  .kontaktio-launcher::before {
-    animation: none !important;
-  }
+  .kontaktio-widget::before, .kontaktio-launcher::before { animation: none !important; }
 }
 </style>
-<script
-  src="https://cdn.jsdelivr.net/gh/kontaktio-demo/kontaktio@5d9beb0/kontaktio.js"
-  data-kontaktio
-  data-client="IronGarage"
-  data-backend="https://chatbot-backend-x2cy.onrender.com"
-></script>
-    <!-- Sticky CTA (centered) -->
+
+<script src="https://cdn.jsdelivr.net/gh/kontaktio-demo/kontaktio@5d9beb0/kontaktio.js" data-kontaktio data-client="IronGarage" data-backend="https://chatbot-backend-x2cy.onrender.com"></script>
+
+<!-- STICKY CTA BAR -->
 <div class="stickyBar" id="stickyBar" aria-hidden="true">
   <div class="stickyBar__content">
-    <b>Zainteresowany? Zobacz inne branże</b>
-    <span>Każda ma gotowego asystenta AI dopasowanego do klientów.</span>
-    <a class="stickyBtn" href="https://kontaktio.pl">← Powrót</a>
+    <b>Zainteresowany? Zobacz inne bran&#380;e</b>
+    <span>Ka&#380;da ma gotowego asystenta dopasowanego do klient&oacute;w.</span>
+    <a class="stickyBtn" href="https://kontaktio.pl">&#8592; Powr&oacute;t do Kontaktio</a>
   </div>
-  <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">×</button>
+  <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">&#215;</button>
 </div>
 <style>
-
-/* Sticky CTA bar — improved contrast */
-.stickyBar{
+.stickyBar {
   position: fixed;
   left: 16px;
   right: 16px;
@@ -440,127 +952,87 @@
   gap: 20px;
   padding: 20px;
   border-radius: 24px;
-  background: rgba(0,0,0,.55); /* mocniejszy kontrast */
-  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0, 0, 0, .6);
+  border: 1px solid rgba(255, 255, 255, .12);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 20px 80px rgba(0,0,0,.55);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, .55);
   transform: translateY(24px);
   opacity: 0;
-  transition: transform .6s var(--ease), opacity .6s var(--ease);
+  transition: transform .6s cubic-bezier(.4, 0, .2, 1), opacity .6s cubic-bezier(.4, 0, .2, 1);
   pointer-events: none;
 }
-
-.stickyBar.on{
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.stickyBar__content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-.stickyBar__content b{
-  font-size: 13px;
-  font-weight: 900;
-  color: #ffffff; /* pełna biel */
-  text-shadow: 0 1px 2px rgba(0,0,0,.6); /* premium glow */
-}
-
-.stickyBar__content span{
-  font-size: 12px;
-  color: #e6e6e6; /* jasny szary */
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);
-}
-
-.stickyBtn{
+.stickyBar.on { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.stickyBar__content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; }
+.stickyBar__content b    { font-size: 13px; font-weight: 900; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+.stickyBar__content span { font-size: 12px; color: #e6e6e6; text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+.stickyBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 38px;
-  padding: 0 16px;
+  padding: 0 18px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.14);
+  border: 1px solid rgba(255, 255, 255, .14);
   background: linear-gradient(135deg, #10b981, #22c55e);
   color: #0b0b0d;
   font-weight: 900;
   font-size: 12px;
   text-decoration: none;
-  box-shadow: 0 14px 40px rgba(16,185,129,.35);
+  box-shadow: 0 14px 40px rgba(16, 185, 129, .35);
 }
-
-.stickyBtn:hover{
-  box-shadow: 0 20px 60px rgba(16,185,129,.55);
-}
-
-.stickyClose{
+.stickyBtn:hover { box-shadow: 0 20px 60px rgba(16, 185, 129, .55); }
+.stickyClose {
   position: absolute;
   top: 10px;
   right: 10px;
   width: 34px;
   height: 34px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.08);
-  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
   font-weight: 900;
   font-size: 18px;
   cursor: pointer;
 }
-
+@media (max-width: 560px) { .stickyBar { flex-direction: column; gap: 12px; padding: 16px; } }
 </style>
-
- <script>
-(function stickyBar(){
-  const bar = document.getElementById("stickyBar");
-  const close = document.getElementById("stickyClose");
+<script>
+(function stickyBar() {
+  var bar   = document.getElementById("stickyBar");
+  var close = document.getElementById("stickyClose");
   if (!bar || !close) return;
 
-  const key = "kontaktio_sticky_closed";
-  const closed = (() => {
-    try { return localStorage.getItem(key) === "1"; } catch { return false; }
-  })();
-  if (closed) return;
+  var key = "kontaktio_sticky_closed";
+  try { if (localStorage.getItem(key) === "1") return; } catch (e) {}
 
-  let lastState = false;
-  let ticking = false;
+  var lastState = false;
+  var ticking   = false;
 
-  function updateBar(){
-    const y = window.scrollY || 0;
-    const shouldShow = y > 900;
-
+  function updateBar() {
+    var shouldShow = (window.scrollY || 0) > 900;
     if (shouldShow !== lastState) {
-      if (shouldShow) {
-        bar.classList.add("on");
-      } else {
-        bar.classList.remove("on");
-      }
+      bar.classList.toggle("on", shouldShow);
+      bar.setAttribute("aria-hidden", String(!shouldShow));
       lastState = shouldShow;
     }
-
     ticking = false;
   }
 
-  function onScroll(){
-    if (!ticking) {
-      window.requestAnimationFrame(updateBar);
-      ticking = true;
-    }
-  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { window.requestAnimationFrame(updateBar); ticking = true; }
+  }, { passive: true });
 
-  window.addEventListener("scroll", onScroll, { passive: true });
   updateBar();
 
-  close.addEventListener("click", () => {
+  close.addEventListener("click", function () {
     bar.classList.remove("on");
-    try { localStorage.setItem(key, "1"); } catch {}
+    bar.setAttribute("aria-hidden", "true");
+    try { localStorage.setItem(key, "1"); } catch (e) {}
   });
 })();
 </script>
+
 </body>
 </html>
