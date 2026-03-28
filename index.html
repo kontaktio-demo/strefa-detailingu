@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IRON GARAGE &#8212; Profesjonalna Mechanika Samochodowa</title>
+  <title>IRON GARAGE — Profesjonalna Mechanika Samochodowa</title>
 
   <meta name="description" content="Iron Garage &#8211; profesjonalny warsztat samochodowy w Warszawie. Diagnostyka komputerowa, mechanika, serwis olejowy, hamulce, klimatyzacja, elektryk. Uczciwe ceny, szybka naprawa.">
   <meta name="keywords" content="mechanik warszawa, serwis samochodowy, diagnostyka komputerowa, naprawa auta, hamulce, zawieszenie, olej, klimatyzacja, elektryk samochodowy, warsztat">
   <meta name="author" content="Kontaktio">
 
-  <meta property="og:title" content="IRON GARAGE &#8212; Profesjonalna Mechanika Samochodowa">
+  <meta property="og:title" content="IRON GARAGE — Profesjonalna Mechanika Samochodowa">
   <meta property="og:description" content="Twoje auto w dobrych r&#281;kach. Diagnostyka, naprawa, serwis &#8212; uczciwe ceny, gwarancja jako&#347;ci.">
   <meta property="og:type" content="website">
 
@@ -803,9 +803,25 @@
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+
+      // Basic validation
+      var name    = form.querySelector("#name");
+      var phone   = form.querySelector("#phone");
+      var message = form.querySelector("#message");
+      var valid   = true;
+
+      [name, phone, message].forEach(function (field) {
+        if (!field) return;
+        var ok = field.value.trim().length > 0;
+        field.style.borderColor = ok ? "" : "var(--red)";
+        if (!ok) valid = false;
+      });
+
+      if (!valid) return;
+
       var btn  = form.querySelector("button[type='submit']");
       var span = btn.querySelector("span");
-      if (span) span.textContent = "Wys\u0142ano! Oddzwonimy wkr\u00f3tce \u2713";
+      if (span) span.textContent = "Wysłano! Oddzwonimy wkrótce ✓";
       btn.disabled = true;
       btn.style.background = "linear-gradient(135deg,#16a34a,#15803d)";
     });
@@ -815,25 +831,101 @@
 
 <!-- KONTAKTIO WIDGET SKIN -->
 <style>
-:root{--k-accent:#ff1a1a;--k-accent2:#990000;--k-glass:rgba(18,18,18,.88);--k-border:rgba(255,255,255,.12);--k-text:rgba(255,255,255,.94);--k-muted:rgba(255,255,255,.65)}
-.kontaktio-launcher{width:64px!important;height:64px!important;border-radius:999px!important;background:radial-gradient(circle at 30% 30%,var(--k-accent),var(--k-accent2))!important;border:1px solid rgba(255,255,255,.22)!important;box-shadow:0 22px 70px rgba(0,0,0,.75),0 0 0 14px rgba(255,26,26,.2),0 0 0 30px rgba(153,0,0,.1)!important;position:fixed!important;bottom:28px!important;right:28px!important;z-index:999999!important;overflow:hidden;cursor:pointer;transition:transform .25s ease}
-.kontaktio-launcher:hover{transform:translateY(-4px) scale(1.05)}
-.kontaktio-launcher::before{content:"";position:absolute;inset:-45%;background:radial-gradient(60% 60% at 30% 30%,rgba(255,255,255,.35),transparent 60%),radial-gradient(60% 60% at 70% 70%,rgba(255,255,255,.12),transparent 62%);filter:blur(8px);animation:kontaktioAurora 6.5s ease-in-out infinite}
-.kontaktio-launcher::after{content:"";position:absolute;inset:0;border-radius:999px;background:linear-gradient(135deg,rgba(255,255,255,.15),transparent 60%);opacity:.35}
-.kontaktio-launcher>div{position:relative;z-index:2;font-size:26px;font-weight:900;color:#fff}
-.kontaktio-widget{border-radius:24px!important;border:1px solid var(--k-border)!important;background:var(--k-glass)!important;backdrop-filter:blur(28px) saturate(180%)!important;-webkit-backdrop-filter:blur(28px) saturate(180%)!important;box-shadow:0 32px 110px rgba(0,0,0,.75),0 1px 0 rgba(255,255,255,.08) inset!important;position:fixed!important;bottom:110px!important;right:28px!important;z-index:999999!important;overflow:hidden}
-.kontaktio-widget::before{content:"";position:absolute;inset:-60px;background:radial-gradient(700px 480px at 20% 10%,rgba(255,26,26,.28),transparent 60%),radial-gradient(620px 520px at 90% 0%,rgba(153,0,0,.24),transparent 58%),radial-gradient(680px 560px at 30% 110%,rgba(255,26,26,.18),transparent 55%);filter:blur(28px);pointer-events:none;animation:kontaktioAurora 9s ease-in-out infinite}
-.kontaktio-header{background:linear-gradient(180deg,rgba(12,12,12,.65),rgba(12,12,12,.25))!important;color:var(--k-text)!important;border-bottom:1px solid rgba(255,255,255,.12)}
-.kontaktio-header-sub{color:var(--k-muted)!important}
-.kontaktio-bubble{border-radius:18px!important;font-size:14.5px!important;line-height:1.5!important;box-shadow:0 18px 50px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.06) inset!important}
-.kontaktio-row.bot .kontaktio-bubble{background:rgba(255,255,255,.08)!important;color:var(--k-text)!important;border:1px solid rgba(255,255,255,.14)}
-.kontaktio-row.user .kontaktio-bubble{background:linear-gradient(135deg,var(--k-accent),var(--k-accent2))!important;color:#fff!important;font-weight:700}
-.kontaktio-inputwrap{background:linear-gradient(180deg,rgba(12,12,12,.18),rgba(12,12,12,.38))!important;border-top:1px solid rgba(255,255,255,.12)}
-.kontaktio-input{background:rgba(255,255,255,.12)!important;color:var(--k-text)!important;border:1px solid rgba(255,255,255,.18)!important}
-.kontaktio-input::placeholder{color:rgba(255,255,255,.55)}
-.kontaktio-send{background:linear-gradient(135deg,var(--k-accent),var(--k-accent2))!important;color:#fff!important;border:1px solid rgba(255,255,255,.22);font-weight:800;box-shadow:0 12px 40px rgba(255,26,26,.35)}
-@keyframes kontaktioAurora{0%{transform:translate(0,0) scale(1)}50%{transform:translate(14px,-12px) scale(1.05)}100%{transform:translate(0,0) scale(1)}}
-@media(prefers-reduced-motion:reduce){.kontaktio-widget::before,.kontaktio-launcher::before{animation:none!important}}
+/* Kontaktio widget theme — Iron Garage */
+:root {
+  --k-accent:  #ff1a1a;
+  --k-accent2: #990000;
+  --k-glass:   rgba(18, 18, 18, .88);
+  --k-border:  rgba(255, 255, 255, .12);
+  --k-text:    rgba(255, 255, 255, .94);
+  --k-muted:   rgba(255, 255, 255, .65);
+}
+
+.kontaktio-launcher {
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 999px !important;
+  background: radial-gradient(circle at 30% 30%, var(--k-accent), var(--k-accent2)) !important;
+  border: 1px solid rgba(255, 255, 255, .22) !important;
+  box-shadow: 0 22px 70px rgba(0,0,0,.75), 0 0 0 14px rgba(255,26,26,.2), 0 0 0 30px rgba(153,0,0,.1) !important;
+  position: fixed !important;
+  bottom: 28px !important;
+  right: 28px !important;
+  z-index: 999999 !important;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .25s ease;
+}
+.kontaktio-launcher:hover { transform: translateY(-4px) scale(1.05); }
+.kontaktio-launcher::before {
+  content: "";
+  position: absolute;
+  inset: -45%;
+  background: radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.35), transparent 60%),
+              radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.12), transparent 62%);
+  filter: blur(8px);
+  animation: kontaktioAurora 6.5s ease-in-out infinite;
+}
+.kontaktio-launcher::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255,255,255,.15), transparent 60%);
+  opacity: .35;
+}
+.kontaktio-launcher > div { position: relative; z-index: 2; font-size: 26px; font-weight: 900; color: #fff; }
+
+.kontaktio-widget {
+  border-radius: 24px !important;
+  border: 1px solid var(--k-border) !important;
+  background: var(--k-glass) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  box-shadow: 0 32px 110px rgba(0,0,0,.75), 0 1px 0 rgba(255,255,255,.08) inset !important;
+  position: fixed !important;
+  bottom: 110px !important;
+  right: 28px !important;
+  z-index: 999999 !important;
+  overflow: hidden;
+}
+.kontaktio-widget::before {
+  content: "";
+  position: absolute;
+  inset: -60px;
+  background: radial-gradient(700px 480px at 20% 10%, rgba(255,26,26,.28), transparent 60%),
+              radial-gradient(620px 520px at 90% 0%,  rgba(153,0,0,.24),  transparent 58%),
+              radial-gradient(680px 560px at 30% 110%,rgba(255,26,26,.18), transparent 55%);
+  filter: blur(28px);
+  pointer-events: none;
+  animation: kontaktioAurora 9s ease-in-out infinite;
+}
+.kontaktio-header {
+  background: linear-gradient(180deg, rgba(12,12,12,.65), rgba(12,12,12,.25)) !important;
+  color: var(--k-text) !important;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.kontaktio-header-sub { color: var(--k-muted) !important; }
+.kontaktio-bubble {
+  border-radius: 18px !important;
+  font-size: 14.5px !important;
+  line-height: 1.5 !important;
+  box-shadow: 0 18px 50px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.06) inset !important;
+}
+.kontaktio-row.bot  .kontaktio-bubble { background: rgba(255,255,255,.08) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.14); }
+.kontaktio-row.user .kontaktio-bubble { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; font-weight: 700; }
+.kontaktio-inputwrap { background: linear-gradient(180deg, rgba(12,12,12,.18), rgba(12,12,12,.38)) !important; border-top: 1px solid rgba(255,255,255,.12); }
+.kontaktio-input     { background: rgba(255,255,255,.12) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.18) !important; }
+.kontaktio-input::placeholder { color: rgba(255,255,255,.55); }
+.kontaktio-send      { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; border: 1px solid rgba(255,255,255,.22); font-weight: 800; box-shadow: 0 12px 40px rgba(255,26,26,.35); }
+@keyframes kontaktioAurora {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(14px, -12px) scale(1.05); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kontaktio-widget::before, .kontaktio-launcher::before { animation: none !important; }
+}
 </style>
 
 <script src="https://cdn.jsdelivr.net/gh/kontaktio-demo/kontaktio@5d9beb0/kontaktio.js" data-kontaktio data-client="IronGarage" data-backend="https://chatbot-backend-x2cy.onrender.com"></script>
@@ -848,18 +940,98 @@
   <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">&#215;</button>
 </div>
 <style>
-.stickyBar{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:flex;align-items:center;justify-content:center;gap:20px;padding:20px;border-radius:24px;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 20px 80px rgba(0,0,0,.55);transform:translateY(24px);opacity:0;transition:transform .6s cubic-bezier(.4,0,.2,1),opacity .6s cubic-bezier(.4,0,.2,1);pointer-events:none}
-.stickyBar.on{transform:translateY(0);opacity:1;pointer-events:auto}
-.stickyBar__content{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
-.stickyBar__content b{font-size:13px;font-weight:900;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6)}
-.stickyBar__content span{font-size:12px;color:#e6e6e6;text-shadow:0 1px 2px rgba(0,0,0,.5)}
-.stickyBtn{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg,#10b981,#22c55e);color:#0b0b0d;font-weight:900;font-size:12px;text-decoration:none;box-shadow:0 14px 40px rgba(16,185,129,.35)}
-.stickyBtn:hover{box-shadow:0 20px 60px rgba(16,185,129,.55)}
-.stickyClose{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;font-weight:900;font-size:18px;cursor:pointer}
-@media(max-width:560px){.stickyBar{flex-direction:column;gap:12px;padding:16px}}
+.stickyBar {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, .6);
+  border: 1px solid rgba(255, 255, 255, .12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, .55);
+  transform: translateY(24px);
+  opacity: 0;
+  transition: transform .6s cubic-bezier(.4, 0, .2, 1), opacity .6s cubic-bezier(.4, 0, .2, 1);
+  pointer-events: none;
+}
+.stickyBar.on { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.stickyBar__content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; }
+.stickyBar__content b    { font-size: 13px; font-weight: 900; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+.stickyBar__content span { font-size: 12px; color: #e6e6e6; text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+.stickyBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: linear-gradient(135deg, #10b981, #22c55e);
+  color: #0b0b0d;
+  font-weight: 900;
+  font-size: 12px;
+  text-decoration: none;
+  box-shadow: 0 14px 40px rgba(16, 185, 129, .35);
+}
+.stickyBtn:hover { box-shadow: 0 20px 60px rgba(16, 185, 129, .55); }
+.stickyClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media (max-width: 560px) { .stickyBar { flex-direction: column; gap: 12px; padding: 16px; } }
 </style>
 <script>
-(function stickyBar(){var bar=document.getElementById("stickyBar"),close=document.getElementById("stickyClose");if(!bar||!close)return;var key="kontaktio_sticky_closed";try{if(localStorage.getItem(key)==="1")return}catch(e){}var lastState=false,ticking=false;function updateBar(){var shouldShow=(window.scrollY||0)>900;if(shouldShow!==lastState){bar.classList.toggle("on",shouldShow);bar.setAttribute("aria-hidden",String(!shouldShow));lastState=shouldShow}ticking=false}window.addEventListener("scroll",function(){if(!ticking){window.requestAnimationFrame(updateBar);ticking=true}},{passive:true});updateBar();close.addEventListener("click",function(){bar.classList.remove("on");bar.setAttribute("aria-hidden","true");try{localStorage.setItem(key,"1")}catch(e){}})})();
+(function stickyBar() {
+  var bar   = document.getElementById("stickyBar");
+  var close = document.getElementById("stickyClose");
+  if (!bar || !close) return;
+
+  var key = "kontaktio_sticky_closed";
+  try { if (localStorage.getItem(key) === "1") return; } catch (e) {}
+
+  var lastState = false;
+  var ticking   = false;
+
+  function updateBar() {
+    var shouldShow = (window.scrollY || 0) > 900;
+    if (shouldShow !== lastState) {
+      bar.classList.toggle("on", shouldShow);
+      bar.setAttribute("aria-hidden", String(!shouldShow));
+      lastState = shouldShow;
+    }
+    ticking = false;
+  }
+
+  window.addEventListener("scroll", function () {
+    if (!ticking) { window.requestAnimationFrame(updateBar); ticking = true; }
+  }, { passive: true });
+
+  updateBar();
+
+  close.addEventListener("click", function () {
+    bar.classList.remove("on");
+    bar.setAttribute("aria-hidden", "true");
+    try { localStorage.setItem(key, "1"); } catch (e) {}
+  });
+})();
 </script>
 
 </body>
