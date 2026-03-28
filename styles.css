@@ -205,7 +205,7 @@ body.loaded #preloader {
 }
 
 .logo strong { color: var(--red); }
-.logo span   { color: var(--text); margin-left: 5px; }
+.logo span   { color: var(--text); }
 
 .nav-menu {
   display: flex;
