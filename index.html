@@ -770,9 +770,11 @@
   }
 
   function startCounters() {
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     document.querySelectorAll(".counter").forEach(function (el) {
       var target = parseInt(el.getAttribute("data-target"), 10);
       if (!target) return;
+      if (reduced) { el.textContent = target.toLocaleString("pl-PL"); return; }
       var duration = 1800;
       var start = null;
       function step(ts) {
