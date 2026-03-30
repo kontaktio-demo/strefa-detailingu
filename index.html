@@ -4,18 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AUTO-COMPLEX - Profesjonalna Mechanika Samochodowa</title>
-
   <meta property="og:title" content="AUTO-COMPLEX - Profesjonalna Mechanika Samochodowa">
   <meta property="og:type" content="website">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;&#128295;&lt;/text&gt;&lt;/svg&gt;">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,7 +29,6 @@
   }
   </script>
 </head>
-
 <body>
 
 <div id="preloader" aria-hidden="true">
@@ -49,7 +43,6 @@
   <a href="#hero" class="logo" aria-label="Auto-Complex - strona g&#322;&#243;wna">
     <strong>AUTO-</strong><span>COMPLEX</span>
   </a>
-
   <nav class="nav-menu" id="navMenu" aria-label="Nawigacja g&#322;&#243;wna">
     <a href="#about"        class="nav-link">O warsztacie</a>
     <a href="#services"     class="nav-link">Us&#322;ugi</a>
@@ -58,53 +51,43 @@
     <a href="#faq"          class="nav-link">FAQ</a>
     <a href="#contact"      class="nav-link">Kontakt</a>
   </nav>
-
   <div class="nav-right">
     <a href="tel:+48700000000" class="nav-phone">&#128222; 700 000 000</a>
     <a href="#contact" class="btn btn-primary">Um&oacute;w serwis</a>
   </div>
-
   <button class="nav-toggle" id="navToggle" aria-label="Otw&oacute;rz menu" aria-expanded="false" type="button">
     <span></span><span></span><span></span>
   </button>
 </header>
 
 <section id="hero" class="hero">
-  <div class="hero-bg">
-    <div class="hero-grid"></div>
-    <div class="hero-glow hero-glow-1"></div>
-    <div class="hero-glow hero-glow-2"></div>
-  </div>
-
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-content">
     <div class="hero-badge">&#127942; Warszawa - ponad 15 lat do&#347;wiadczenia</div>
-
     <h1 class="hero-title">
       <span class="hero-sub">MECHANIKA</span>
       <strong>BEZ KOMPROMIS&Oacute;W</strong>
     </h1>
-
     <p class="hero-desc">
       Diagnostyka. Naprawa. Serwis.<br>
       Twoje auto w najlepszych r&#281;kach - gwarantujemy.
     </p>
-
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary btn-lg">
         <span>Um&oacute;w wizyt&#281;</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#services" class="btn btn-outline btn-lg">Sprawd&#378; us&#322;ugi</a>
+      <a href="#services" class="btn btn-glass btn-lg">Sprawd&#378; us&#322;ugi</a>
     </div>
-
     <div class="hero-stats">
       <div class="hero-stat">
-        <strong>15+</strong>
+        <strong class="counter" data-target="15">0</strong><sup>+</sup>
         <span>lat do&#347;wiadczenia</span>
       </div>
       <div class="hero-stat-divider" aria-hidden="true"></div>
       <div class="hero-stat">
-        <strong>2&#160;000+</strong>
+        <strong class="counter" data-target="2000">0</strong><sup>+</sup>
         <span>zadowolonych klient&oacute;w</span>
       </div>
       <div class="hero-stat-divider" aria-hidden="true"></div>
@@ -119,46 +102,39 @@
       </div>
     </div>
   </div>
-
   <a href="#about" class="scroll-down" aria-label="Przewi&#324; w d&oacute;&#322;">
     <div class="scroll-down-arrow" aria-hidden="true"></div>
   </a>
 </section>
 
-<section class="trust-bar" aria-label="Nasze wyr&oacute;&#380;niki">
+<div class="trust-bar" aria-label="Nasze wyr&oacute;&#380;niki">
   <div class="container">
     <div class="trust-items">
-      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#9989;</span><span>Certyfikowani mechanicy</span></div>
-      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128269;</span><span>Diagnostyka komputerowa</span></div>
-      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128176;</span><span>Jasna wycena przed napraw&#261;</span></div>
-      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128737;</span><span>12 miesi&#281;cy gwarancji</span></div>
-      <div class="trust-item"><span class="trust-icon" aria-hidden="true">&#128664;</span><span>Wszystkie marki i modele</span></div>
+      <div class="trust-item"><span aria-hidden="true">&#9989;</span><span>Certyfikowani mechanicy</span></div>
+      <div class="trust-item"><span aria-hidden="true">&#128269;</span><span>Diagnostyka komputerowa</span></div>
+      <div class="trust-item"><span aria-hidden="true">&#128176;</span><span>Jasna wycena przed napraw&#261;</span></div>
+      <div class="trust-item"><span aria-hidden="true">&#128737;</span><span>12 miesi&#281;cy gwarancji</span></div>
+      <div class="trust-item"><span aria-hidden="true">&#128664;</span><span>Wszystkie marki i modele</span></div>
     </div>
   </div>
-</section>
+</div>
 
 <section id="about" class="section about">
   <div class="container">
     <div class="about-grid">
       <div class="about-visual" data-animate>
-        <div class="about-img-wrap">
-          <div class="about-img-main" aria-hidden="true"></div>
-          <div class="about-img-accent" aria-hidden="true"></div>
-          <div class="about-badge-float">
-            <strong>15</strong>
-            <span>lat w bran&#380;y</span>
-          </div>
+        <div class="about-photo"></div>
+        <div class="about-badge-float">
+          <strong>15</strong>
+          <span>lat w bran&#380;y</span>
         </div>
+        <div class="about-photo-accent"></div>
       </div>
-
       <div class="about-text" data-animate>
         <div class="label">O nas</div>
         <h2>Warsztat, kt&oacute;ry szanuje Tw&oacute;j czas i pieni&#261;dze</h2>
-
         <p>Auto-Complex to niezale&#380;ny warsztat samochodowy, kt&oacute;ry stawia na jako&#347;&#263;, rzeteeln&#261; diagnostyk&#281; i uczciwe podej&#347;cie do klienta. Dzia&#322;amy w Warszawie od ponad 15 lat.</p>
-
-        <p>Nie wymieniamy cz&#281;&#347;ci &bdquo;na &#347;lepo&rdquo; - najpierw precyzyjna diagnoza, potem jasna wycena, a dopiero na ko&#324;cu naprawa. &#379;adnych ukrytych koszt&oacute;w.</p>
-
+        <p>Nie wymieniamy cz&#281;&#347;ci na &#347;lepo - najpierw precyzyjna diagnoza, potem jasna wycena, a dopiero na ko&#324;cu naprawa. &#379;adnych ukrytych koszt&oacute;w.</p>
         <ul class="about-list">
           <li>
             <div class="about-list-icon" aria-hidden="true">&#10003;</div>
@@ -189,7 +165,6 @@
             </div>
           </li>
         </ul>
-
         <a href="#contact" class="btn btn-primary">Skontaktuj si&#281; z nami</a>
       </div>
     </div>
@@ -203,9 +178,8 @@
       <h2 class="section-title">Pe&#322;en zakres us&#322;ug</h2>
       <p class="section-desc">Kompleksowa obs&#322;uga ka&#380;dego pojazdu - od przegl&#261;du po powa&#380;ne naprawy</p>
     </div>
-
     <div class="services-grid">
-      <article class="service-card" data-animate>
+      <article class="service-card" data-animate style="--i:0">
         <div class="service-icon" aria-hidden="true">&#128302;</div>
         <h3>Diagnostyka komputerowa</h3>
         <p>Odczyt kod&oacute;w b&#322;&#281;d&oacute;w, analiza parametr&oacute;w silnika, diagnostyka uk&#322;ad&oacute;w elektronicznych wszystkich marek.</p>
@@ -214,8 +188,7 @@
           <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
         </div>
       </article>
-
-      <article class="service-card featured" data-animate>
+      <article class="service-card featured" data-animate style="--i:1">
         <div class="service-badge">Najcz&#281;&#347;tszy wyb&oacute;r</div>
         <div class="service-icon" aria-hidden="true">&#128295;</div>
         <h3>Mechanika og&oacute;lna</h3>
@@ -225,8 +198,7 @@
           <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
         </div>
       </article>
-
-      <article class="service-card" data-animate>
+      <article class="service-card" data-animate style="--i:2">
         <div class="service-icon" aria-hidden="true">&#128760;</div>
         <h3>Zawieszenie i uk&#322;ad kierowniczy</h3>
         <p>Amortyzatory, wahacze, dr&#261;&#380;ki, &#322;o&#380;yska, zbie&#380;no&#347;&#263; - pe&#322;na diagnostyka i naprawa.</p>
@@ -235,8 +207,7 @@
           <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
         </div>
       </article>
-
-      <article class="service-card" data-animate>
+      <article class="service-card" data-animate style="--i:3">
         <div class="service-icon" aria-hidden="true">&#128721;</div>
         <h3>Uk&#322;ad hamulcowy</h3>
         <p>Klocki, tarcze, cylindry, p&#322;yn hamulcowy - bezpiecze&#324;stwo Twojego auta na pierwszym miejscu.</p>
@@ -245,8 +216,7 @@
           <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
         </div>
       </article>
-
-      <article class="service-card" data-animate>
+      <article class="service-card" data-animate style="--i:4">
         <div class="service-icon" aria-hidden="true">&#128260;</div>
         <h3>Serwis olejowy i przegl&#261;dy</h3>
         <p>Wymiana oleju, filtr&oacute;w, p&#322;yn&oacute;w, &#347;wiec. Przegl&#261;dy okresowe i przed zakupem u&#380;ywanego auta.</p>
@@ -255,8 +225,7 @@
           <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
         </div>
       </article>
-
-      <article class="service-card" data-animate>
+      <article class="service-card" data-animate style="--i:5">
         <div class="service-icon" aria-hidden="true">&#10052;</div>
         <h3>Klimatyzacja</h3>
         <p>Serwis, uzupe&#322;nienie czynnika, dezynfekcja, diagnostyka i naprawa uk&#322;adu klimatyzacji.</p>
@@ -265,8 +234,7 @@
           <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
         </div>
       </article>
-
-      <article class="service-card" data-animate>
+      <article class="service-card" data-animate style="--i:6">
         <div class="service-icon" aria-hidden="true">&#9889;</div>
         <h3>Elektryk samochodowy</h3>
         <p>Alternator, rozrusznik, instalacja elektryczna, diagnostyka CAN-bus, akumulator.</p>
@@ -275,8 +243,7 @@
           <a href="#contact" class="service-link">Um&oacute;w &#8594;</a>
         </div>
       </article>
-
-      <article class="service-card" data-animate>
+      <article class="service-card" data-animate style="--i:7">
         <div class="service-icon" aria-hidden="true">&#128293;</div>
         <h3>Tuning i performance</h3>
         <p>Chip-tuning, wydechy, zawieszenie sportowe, do&#322;adowanie - dla wymagaj&#261;cych kierowc&oacute;w.</p>
@@ -290,36 +257,37 @@
 </section>
 
 <section id="process" class="section process">
+  <div class="process-bg" aria-hidden="true"></div>
+  <div class="process-overlay" aria-hidden="true"></div>
   <div class="container">
     <div class="section-header" data-animate>
       <div class="label">Jak dzia&#322;amy</div>
       <h2 class="section-title">Prosty proces, pewny wynik</h2>
       <p class="section-desc">4 kroki od problemu do sprawnego auta</p>
     </div>
-
     <div class="process-steps">
-      <div class="process-step" data-animate>
+      <div class="process-step" data-animate style="--i:0">
         <div class="process-num" aria-hidden="true">01</div>
         <div class="process-icon" aria-hidden="true">&#128222;</div>
         <h4>Kontakt i ustalenia</h4>
         <p>Opisujesz problem - telefonicznie lub przez formularz. Ustalamy termin oddania auta.</p>
       </div>
       <div class="process-connector" aria-hidden="true"></div>
-      <div class="process-step" data-animate>
+      <div class="process-step" data-animate style="--i:1">
         <div class="process-num" aria-hidden="true">02</div>
         <div class="process-icon" aria-hidden="true">&#128302;</div>
         <h4>Precyzyjna diagnoza</h4>
         <p>Sprawdzamy problem komputerowo i manualnie. &#379;adnych zgadywanek - tylko twarde dane.</p>
       </div>
       <div class="process-connector" aria-hidden="true"></div>
-      <div class="process-step" data-animate>
+      <div class="process-step" data-animate style="--i:2">
         <div class="process-num" aria-hidden="true">03</div>
         <div class="process-icon" aria-hidden="true">&#128172;</div>
         <h4>Jasna wycena</h4>
         <p>Dostajesz konkretn&#261; kwot&#281; przed jakkolwiek prac&#261;. Bez ukrytych koszt&oacute;w.</p>
       </div>
       <div class="process-connector" aria-hidden="true"></div>
-      <div class="process-step" data-animate>
+      <div class="process-step" data-animate style="--i:3">
         <div class="process-num" aria-hidden="true">04</div>
         <div class="process-icon" aria-hidden="true">&#9989;</div>
         <h4>Naprawa i odbi&oacute;r</h4>
@@ -336,32 +304,32 @@
       <h2 class="section-title">Co nas wyr&oacute;&#380;nia</h2>
     </div>
     <div class="why-grid">
-      <div class="why-card" data-animate>
+      <div class="why-card" data-animate style="--i:0">
         <div class="why-icon" aria-hidden="true">&#127942;</div>
         <h4>15 lat na rynku</h4>
         <p>Do&#347;wiadczenie, kt&oacute;rego nie da si&#281; kupi&#263;. Widzieli&#347;my ka&#380;dy mo&#380;liwy problem z autem.</p>
       </div>
-      <div class="why-card" data-animate>
+      <div class="why-card" data-animate style="--i:1">
         <div class="why-icon" aria-hidden="true">&#128176;</div>
         <h4>Uczciwe ceny</h4>
         <p>Wyceniamy przed napraw&#261;. Cena, kt&oacute;r&#261; s&#322;yszysz, to cena, kt&oacute;r&#261; p&#322;acisz.</p>
       </div>
-      <div class="why-card" data-animate>
+      <div class="why-card" data-animate style="--i:2">
         <div class="why-icon" aria-hidden="true">&#9889;</div>
         <h4>Ekspresowe naprawy</h4>
         <p>Wi&#281;kszo&#347;&#263; usterek usuwamy w ci&#261;gu dnia. Wiemy, &#380;e auto jest Ci potrzebne.</p>
       </div>
-      <div class="why-card" data-animate>
+      <div class="why-card" data-animate style="--i:3">
         <div class="why-icon" aria-hidden="true">&#128241;</div>
         <h4>Komunikacja na bie&#380;&#261;co</h4>
         <p>SMS i telefon z aktualizacjami. Zawsze wiesz, co dzieje si&#281; z Twoim autem.</p>
       </div>
-      <div class="why-card" data-animate>
+      <div class="why-card" data-animate style="--i:4">
         <div class="why-icon" aria-hidden="true">&#128737;</div>
         <h4>Gwarancja na us&#322;ugi</h4>
         <p>12 miesi&#281;cy gwarancji na wykonane naprawy. Co&#347; nie gra? Wr&oacute;&#263; - naprawimy.</p>
       </div>
-      <div class="why-card" data-animate>
+      <div class="why-card" data-animate style="--i:5">
         <div class="why-icon" aria-hidden="true">&#128664;</div>
         <h4>Wszystkie marki</h4>
         <p>Audi, BMW, Mercedes, VAG, Ford, Toyota, Opel - serwisujemy ka&#380;dy pojazd.</p>
@@ -378,7 +346,7 @@
       <p class="section-desc">Ponad 2000 zadowolonych klient&oacute;w - sprawd&#378;, dlaczego nam ufaj&#261;</p>
     </div>
     <div class="reviews-grid">
-      <div class="review-card" data-animate>
+      <div class="review-card" data-animate style="--i:0">
         <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="review-text">&bdquo;Przywieli&#347;my Passata z problemem z silnikiem, kt&oacute;ry inny warsztat naprawia&#322; ju&#380; dwa razy. Auto-Complex znalaz&#322; prawdziwy problem w ci&#261;gu godziny. Uczciwie, szybko i w dobrej cenie.&rdquo;</p>
         <div class="review-author">
@@ -386,7 +354,7 @@
           <div><strong>Marek K.</strong><span>Volkswagen Passat B8</span></div>
         </div>
       </div>
-      <div class="review-card" data-animate>
+      <div class="review-card" data-animate style="--i:1">
         <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="review-text">&bdquo;Najlepszy warsztat w jakim by&#322;am. Zadzwoni&#322;am z pytaniem o klimatyzacj&#281;, dosta&#322;am konkretn&#261; odpowied&#378; i termin na nast&#281;pny dzie&#324;. Auto gotowe o czasie, cena zgodna z wycen&#261;.&rdquo;</p>
         <div class="review-author">
@@ -394,7 +362,7 @@
           <div><strong>Anna W.</strong><span>Skoda Octavia IV</span></div>
         </div>
       </div>
-      <div class="review-card" data-animate>
+      <div class="review-card" data-animate style="--i:2">
         <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="review-text">&bdquo;Polecam ka&#380;demu. M&oacute;j BMW E46 to stary zawodnik, ale mechanicy znaj&#261; go od &#347;rodka. Diagnoza, rozrz&#261;d i regulacja - wszystko zrobione porz&#261;dnie. Jedyne miejsce, kt&oacute;remu ufam.&rdquo;</p>
         <div class="review-author">
@@ -402,9 +370,9 @@
           <div><strong>Piotr T.</strong><span>BMW E46 330i</span></div>
         </div>
       </div>
-      <div class="review-card" data-animate>
+      <div class="review-card" data-animate style="--i:3">
         <div class="review-stars" aria-label="5 gwiazdek">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">&bdquo;Sprawdzali auto przed zakupem - wy&#322;apali usterki, kt&oacute;rych bym nie zauwa&#380;y&#322;. Zaoszcz&#281;dzi&#322;em mnóstwo pieni&#281;dzy. Teraz m&oacute;j Audi jest ju&#380; u nich regularnie na serwisie.&rdquo;</p>
+        <p class="review-text">&bdquo;Sprawdzali auto przed zakupem - wy&#322;apali usterki, kt&oacute;rych bym nie zauwa&#380;y&#322;. Zaoszcz&#281;dzi&#322;em mn&oacute;stwo pieni&#281;dzy. Teraz m&oacute;j Audi jest ju&#380; u nich regularnie na serwisie.&rdquo;</p>
         <div class="review-author">
           <div class="review-avatar" aria-hidden="true">RM</div>
           <div><strong>Robert M.</strong><span>Audi A4 B9</span></div>
@@ -435,22 +403,22 @@
       <p class="section-desc">Cz&#281;&#347;&#263; z tego, co zrobili&#347;my - ka&#380;de auto wysz&#322;o od nas sprawne</p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item gi-1" data-animate style="--i:0">
         <div class="gallery-overlay"><span>Wymiana rozrz&#261;du</span><small>BMW 3.0d</small></div>
       </div>
-      <div class="gallery-item wide" data-animate>
+      <div class="gallery-item gi-2 wide" data-animate style="--i:1">
         <div class="gallery-overlay"><span>Regeneracja silnika</span><small>Mercedes C-Class W205</small></div>
       </div>
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item gi-3" data-animate style="--i:2">
         <div class="gallery-overlay"><span>Serwis klimatyzacji</span><small>Audi A6 C7</small></div>
       </div>
-      <div class="gallery-item tall" data-animate>
+      <div class="gallery-item gi-4 tall" data-animate style="--i:3">
         <div class="gallery-overlay"><span>Naprawa zawieszenia</span><small>VW Golf VII GTI</small></div>
       </div>
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item gi-5" data-animate style="--i:4">
         <div class="gallery-overlay"><span>Chip-tuning</span><small>Ford Focus ST</small></div>
       </div>
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item gi-6" data-animate style="--i:5">
         <div class="gallery-overlay"><span>Serwis hamulc&oacute;w</span><small>Toyota Corolla XII</small></div>
       </div>
     </div>
@@ -524,7 +492,8 @@
 </section>
 
 <section class="cta">
-  <div class="cta-bg" aria-hidden="true"><div class="cta-glow"></div></div>
+  <div class="cta-photo" aria-hidden="true"></div>
+  <div class="cta-overlay" aria-hidden="true"></div>
   <div class="container">
     <div class="cta-content" data-animate>
       <div class="cta-icon" aria-hidden="true">&#128680;</div>
@@ -552,7 +521,6 @@
       <h2 class="section-title">Um&oacute;w serwis</h2>
       <p class="section-desc">Wype&#322;nij formularz lub zadzwo&#324; - oddzwonimy w ci&#261;gu godziny</p>
     </div>
-
     <div class="contact-grid">
       <div class="contact-info" data-animate>
         <div class="contact-info-card">
@@ -596,7 +564,6 @@
           </a>
         </div>
       </div>
-
       <div class="contact-form-wrap" data-animate>
         <form class="contact-form" id="contactForm" novalidate>
           <h3>Wy&#347;lij zg&#322;oszenie</h3>
@@ -708,6 +675,7 @@
 
   window.addEventListener("load", function () {
     document.body.classList.add("loaded");
+    startCounters();
   });
 
   var navbar = document.getElementById("navbar");
@@ -753,7 +721,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+    }, { threshold: 0.08, rootMargin: "0px 0px -30px 0px" });
     animEls.forEach(function (el) { observer.observe(el); });
   } else {
     animEls.forEach(function (el) { el.classList.add("visible"); });
@@ -786,44 +754,59 @@
       var phone   = form.querySelector("#phone");
       var message = form.querySelector("#message");
       var valid   = true;
-
       [name, phone, message].forEach(function (field) {
         if (!field) return;
         var ok = field.value.trim().length > 0;
         field.style.borderColor = ok ? "" : "var(--red)";
         if (!ok) valid = false;
       });
-
       if (!valid) return;
-
       var btn  = form.querySelector("button[type='submit']");
       var span = btn.querySelector("span");
-      if (span) span.textContent = "Wysłano! Oddzwonimy wkrótce ✓";
+      if (span) span.textContent = "Wys\u0142ano! Oddzwonimy wkr\u00f3tce \u2713";
       btn.disabled = true;
       btn.style.background = "linear-gradient(135deg,#16a34a,#15803d)";
+    });
+  }
+
+  function startCounters() {
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.querySelectorAll(".counter").forEach(function (el) {
+      var target = parseInt(el.getAttribute("data-target"), 10);
+      if (!target) return;
+      if (reduced) { el.textContent = target.toLocaleString("pl-PL"); return; }
+      var duration = 1800;
+      var start = null;
+      function step(ts) {
+        if (!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target).toLocaleString("pl-PL");
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString("pl-PL");
+      }
+      requestAnimationFrame(step);
     });
   }
 })();
 </script>
 
 <style>
-
 :root {
-  --k-accent:  #ff1a1a;
-  --k-accent2: #990000;
-  --k-glass:   rgba(18, 18, 18, .88);
-  --k-border:  rgba(255, 255, 255, .12);
-  --k-text:    rgba(255, 255, 255, .94);
-  --k-muted:   rgba(255, 255, 255, .65);
+  --k-accent:  #e5141c;
+  --k-accent2: #900e13;
+  --k-glass:   rgba(14, 14, 14, .92);
+  --k-border:  rgba(255, 255, 255, .1);
+  --k-text:    rgba(255, 255, 255, .93);
+  --k-muted:   rgba(255, 255, 255, .62);
 }
-
 .kontaktio-launcher {
-  width: 64px !important;
-  height: 64px !important;
+  width: 62px !important;
+  height: 62px !important;
   border-radius: 999px !important;
   background: radial-gradient(circle at 30% 30%, var(--k-accent), var(--k-accent2)) !important;
-  border: 1px solid rgba(255, 255, 255, .22) !important;
-  box-shadow: 0 22px 70px rgba(0,0,0,.75), 0 0 0 14px rgba(255,26,26,.2), 0 0 0 30px rgba(153,0,0,.1) !important;
+  border: 1px solid rgba(255,255,255,.2) !important;
+  box-shadow: 0 18px 60px rgba(0,0,0,.7), 0 0 0 12px rgba(229,20,28,.18), 0 0 0 26px rgba(144,14,19,.09) !important;
   position: fixed !important;
   bottom: 28px !important;
   right: 28px !important;
@@ -832,35 +815,26 @@
   cursor: pointer;
   transition: transform .25s ease;
 }
-.kontaktio-launcher:hover { transform: translateY(-4px) scale(1.05); }
+.kontaktio-launcher:hover { transform: translateY(-4px) scale(1.06); }
 .kontaktio-launcher::before {
   content: "";
   position: absolute;
   inset: -45%;
-  background: radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.35), transparent 60%),
-              radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.12), transparent 62%);
+  background: radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.3), transparent 60%),
+              radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.1), transparent 62%);
   filter: blur(8px);
-  animation: kontaktioAurora 6.5s ease-in-out infinite;
-}
-.kontaktio-launcher::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(255,255,255,.15), transparent 60%);
-  opacity: .35;
+  animation: kAurora 6.5s ease-in-out infinite;
 }
 .kontaktio-launcher > div { position: relative; z-index: 2; font-size: 26px; font-weight: 900; color: #fff; }
-
 .kontaktio-widget {
-  border-radius: 24px !important;
+  border-radius: 22px !important;
   border: 1px solid var(--k-border) !important;
   background: var(--k-glass) !important;
   backdrop-filter: blur(28px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
-  box-shadow: 0 32px 110px rgba(0,0,0,.75), 0 1px 0 rgba(255,255,255,.08) inset !important;
+  box-shadow: 0 28px 100px rgba(0,0,0,.8), 0 1px 0 rgba(255,255,255,.06) inset !important;
   position: fixed !important;
-  bottom: 110px !important;
+  bottom: 108px !important;
   right: 28px !important;
   z-index: 999999 !important;
   overflow: hidden;
@@ -869,35 +843,33 @@
   content: "";
   position: absolute;
   inset: -60px;
-  background: radial-gradient(700px 480px at 20% 10%, rgba(255,26,26,.28), transparent 60%),
-              radial-gradient(620px 520px at 90% 0%,  rgba(153,0,0,.24),  transparent 58%),
-              radial-gradient(680px 560px at 30% 110%,rgba(255,26,26,.18), transparent 55%);
+  background: radial-gradient(700px 480px at 20% 10%, rgba(229,20,28,.24), transparent 60%),
+              radial-gradient(620px 520px at 90% 0%,  rgba(144,14,19,.2), transparent 58%);
   filter: blur(28px);
   pointer-events: none;
-  animation: kontaktioAurora 9s ease-in-out infinite;
+  animation: kAurora 9s ease-in-out infinite;
 }
 .kontaktio-header {
-  background: linear-gradient(180deg, rgba(12,12,12,.65), rgba(12,12,12,.25)) !important;
+  background: linear-gradient(180deg, rgba(10,10,10,.7), rgba(10,10,10,.3)) !important;
   color: var(--k-text) !important;
-  border-bottom: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid rgba(255,255,255,.1);
 }
 .kontaktio-header-sub { color: var(--k-muted) !important; }
 .kontaktio-bubble {
-  border-radius: 18px !important;
+  border-radius: 16px !important;
   font-size: 14.5px !important;
   line-height: 1.5 !important;
-  box-shadow: 0 18px 50px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.06) inset !important;
+  box-shadow: 0 14px 40px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.05) inset !important;
 }
-.kontaktio-row.bot  .kontaktio-bubble { background: rgba(255,255,255,.08) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.14); }
+.kontaktio-row.bot  .kontaktio-bubble { background: rgba(255,255,255,.07) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.12); }
 .kontaktio-row.user .kontaktio-bubble { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; font-weight: 700; }
-.kontaktio-inputwrap { background: linear-gradient(180deg, rgba(12,12,12,.18), rgba(12,12,12,.38)) !important; border-top: 1px solid rgba(255,255,255,.12); }
-.kontaktio-input     { background: rgba(255,255,255,.12) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.18) !important; }
-.kontaktio-input::placeholder { color: rgba(255,255,255,.55); }
-.kontaktio-send      { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; border: 1px solid rgba(255,255,255,.22); font-weight: 800; box-shadow: 0 12px 40px rgba(255,26,26,.35); }
-@keyframes kontaktioAurora {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(14px, -12px) scale(1.05); }
-  100% { transform: translate(0, 0) scale(1); }
+.kontaktio-inputwrap { background: linear-gradient(180deg, rgba(10,10,10,.15), rgba(10,10,10,.35)) !important; border-top: 1px solid rgba(255,255,255,.1); }
+.kontaktio-input     { background: rgba(255,255,255,.1) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.16) !important; }
+.kontaktio-input::placeholder { color: rgba(255,255,255,.5); }
+.kontaktio-send      { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; font-weight: 800; box-shadow: 0 10px 35px rgba(229,20,28,.32); }
+@keyframes kAurora {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%      { transform: translate(12px,-10px) scale(1.04); }
 }
 @media (prefers-reduced-motion: reduce) {
   .kontaktio-widget::before, .kontaktio-launcher::before { animation: none !important; }
@@ -917,59 +889,43 @@
 <style>
 .stickyBar {
   position: fixed;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
+  left: 16px; right: 16px; bottom: 16px;
   z-index: 50;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  border-radius: 24px;
-  background: rgba(0, 0, 0, .6);
-  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 22px;
+  background: rgba(0,0,0,.62);
+  border: 1px solid rgba(255,255,255,.1);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 20px 80px rgba(0, 0, 0, .55);
+  box-shadow: 0 20px 80px rgba(0,0,0,.55);
   transform: translateY(24px);
   opacity: 0;
-  transition: transform .6s cubic-bezier(.4, 0, .2, 1), opacity .6s cubic-bezier(.4, 0, .2, 1);
+  transition: transform .6s cubic-bezier(.4,0,.2,1), opacity .6s cubic-bezier(.4,0,.2,1);
   pointer-events: none;
 }
 .stickyBar.on { transform: translateY(0); opacity: 1; pointer-events: auto; }
 .stickyBar__content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; }
-.stickyBar__content b    { font-size: 13px; font-weight: 900; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
-.stickyBar__content span { font-size: 12px; color: #e6e6e6; text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+.stickyBar__content b    { font-size: 13px; font-weight: 900; color: #fff; }
+.stickyBar__content span { font-size: 12px; color: #e0e0e0; }
 .stickyBtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 38px;
-  padding: 0 18px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, .14);
-  background: linear-gradient(135deg, #10b981, #22c55e);
-  color: #0b0b0d;
-  font-weight: 900;
-  font-size: 12px;
-  text-decoration: none;
-  box-shadow: 0 14px 40px rgba(16, 185, 129, .35);
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 38px; padding: 0 18px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(135deg,#10b981,#22c55e);
+  color: #0a0a0a; font-weight: 900; font-size: 12px; text-decoration: none;
+  box-shadow: 0 12px 38px rgba(16,185,129,.32);
 }
-.stickyBtn:hover { box-shadow: 0 20px 60px rgba(16, 185, 129, .55); }
+.stickyBtn:hover { box-shadow: 0 18px 56px rgba(16,185,129,.52); }
 .stickyClose {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, .14);
-  background: rgba(255, 255, 255, .08);
-  color: #fff;
-  font-weight: 900;
-  font-size: 18px;
-  cursor: pointer;
+  position: absolute; top: 10px; right: 10px;
+  width: 34px; height: 34px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.07);
+  color: #fff; font-weight: 900; font-size: 18px; cursor: pointer;
 }
 @media (max-width: 560px) { .stickyBar { flex-direction: column; gap: 12px; padding: 16px; } }
 </style>
@@ -978,13 +934,10 @@
   var bar   = document.getElementById("stickyBar");
   var close = document.getElementById("stickyClose");
   if (!bar || !close) return;
-
   var key = "kontaktio_sticky_closed";
   try { if (localStorage.getItem(key) === "1") return; } catch (e) {}
-
   var lastState = false;
   var ticking   = false;
-
   function updateBar() {
     var shouldShow = (window.scrollY || 0) > 900;
     if (shouldShow !== lastState) {
@@ -994,13 +947,10 @@
     }
     ticking = false;
   }
-
   window.addEventListener("scroll", function () {
     if (!ticking) { window.requestAnimationFrame(updateBar); ticking = true; }
   }, { passive: true });
-
   updateBar();
-
   close.addEventListener("click", function () {
     bar.classList.remove("on");
     bar.setAttribute("aria-hidden", "true");
