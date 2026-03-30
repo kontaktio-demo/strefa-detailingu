@@ -475,7 +475,7 @@ img { display: block; max-width: 100%; }
   width: 100%;
   aspect-ratio: 4/5;
   border-radius: var(--radius-lg);
-  background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80');
+  background-image: url('https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=800&q=80');
   background-size: cover;
   background-position: center;
   box-shadow: 0 40px 100px rgba(0,0,0,.6);
