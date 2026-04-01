@@ -879,55 +879,52 @@
 <script src="kontaktio.js" data-kontaktio data-client="IronGarage" data-backend="https://chatbot-backend-x2cy.onrender.com"></script>
 
 <div class="stickyBar" id="stickyBar" aria-hidden="true">
-  <div class="stickyBar__content">
-    <b>Zainteresowany? Zobacz inne bran&#380;e</b>
-    <span>Ka&#380;da ma gotowego asystenta dopasowanego do klient&oacute;w.</span>
-    <a class="stickyBtn" href="https://kontaktio.pl">&#8592; Powr&oacute;t do Kontaktio</a>
-  </div>
+  <span class="stickyBar__text">Inne bran&#380;e? <a class="stickyBtn" href="https://kontaktio.pl">Zobacz na Kontaktio</a></span>
   <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">&#215;</button>
 </div>
 <style>
 .stickyBar {
   position: fixed;
-  left: 16px; right: 16px; bottom: 16px;
+  left: 50%; bottom: 16px;
+  transform: translateX(-50%) translateY(20px);
   z-index: 50;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 22px;
-  background: rgba(0,0,0,.62);
+  gap: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.7);
   border: 1px solid rgba(255,255,255,.1);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 20px 80px rgba(0,0,0,.55);
-  transform: translateY(24px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(0,0,0,.4);
   opacity: 0;
-  transition: transform .6s cubic-bezier(.4,0,.2,1), opacity .6s cubic-bezier(.4,0,.2,1);
+  transition: transform .5s cubic-bezier(.4,0,.2,1), opacity .5s cubic-bezier(.4,0,.2,1);
   pointer-events: none;
+  white-space: nowrap;
 }
-.stickyBar.on { transform: translateY(0); opacity: 1; pointer-events: auto; }
-.stickyBar__content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; }
-.stickyBar__content b    { font-size: 13px; font-weight: 900; color: #fff; }
-.stickyBar__content span { font-size: 12px; color: #e0e0e0; }
+.stickyBar.on { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: auto; }
+.stickyBar__text { font-size: 12px; color: rgba(255,255,255,.8); font-weight: 500; }
 .stickyBtn {
-  display: inline-flex; align-items: center; justify-content: center;
-  height: 38px; padding: 0 18px; border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.12);
+  display: inline-flex; align-items: center;
+  height: 28px; padding: 0 12px; border-radius: 999px;
   background: linear-gradient(135deg,#10b981,#22c55e);
-  color: #0a0a0a; font-weight: 900; font-size: 12px; text-decoration: none;
-  box-shadow: 0 12px 38px rgba(16,185,129,.32);
+  color: #0a0a0a; font-weight: 800; font-size: 11px; text-decoration: none;
+  margin-left: 4px;
 }
-.stickyBtn:hover { box-shadow: 0 18px 56px rgba(16,185,129,.52); }
+.stickyBtn:hover { box-shadow: 0 6px 20px rgba(16,185,129,.4); }
 .stickyClose {
-  position: absolute; top: 10px; right: 10px;
-  width: 34px; height: 34px; border-radius: 999px;
+  width: 22px; height: 22px; border-radius: 999px;
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.07);
-  color: #fff; font-weight: 900; font-size: 18px; cursor: pointer;
+  color: #fff; font-size: 13px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  padding: 0; line-height: 1; flex-shrink: 0;
 }
-@media (max-width: 560px) { .stickyBar { flex-direction: column; gap: 12px; padding: 16px; } }
+@media (max-width: 480px) {
+  .stickyBar { left: 12px; right: 12px; transform: translateX(0) translateY(20px); white-space: normal; justify-content: center; text-align: center; }
+  .stickyBar.on { transform: translateX(0) translateY(0); }
+}
 </style>
 <script>
 (function stickyBar() {
