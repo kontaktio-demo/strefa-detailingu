@@ -508,6 +508,34 @@ h1 em {
   border: 0;
   display: block;
 }
+.map-facade {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  margin: 0;
+  padding: 16px;
+  background:
+    linear-gradient(135deg, rgba(229, 20, 28, 0.06), rgba(17, 20, 24, 0.04)),
+    var(--bg-alt);
+  color: var(--fg);
+  cursor: pointer;
+  font: inherit;
+  text-align: center;
+}
+.map-facade:hover { background: var(--bg-alt); }
+.map-facade-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--fg-muted);
+}
+.map-facade-inner svg { color: var(--red); }
+.map-facade-title { font-weight: 600; color: var(--fg); }
+.map-facade-cta { font-size: 14px; }
 
 .contact-socials {
   margin-top: 20px;
