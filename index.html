@@ -512,8 +512,7 @@
       var iframe = document.createElement('iframe');
       iframe.title = 'Mapa - Anny Walentynowicz 3, Łódź';
       iframe.src = src;
-      iframe.loading = 'lazy';
-      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
       iframe.setAttribute('allowfullscreen', '');
       facade.parentNode.replaceChild(iframe, facade);
     }
