@@ -816,7 +816,7 @@ a:focus-visible, .btn:focus-visible, .nav-toggle:focus-visible, button:focus-vis
 @media (max-width: 560px) {
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
 }
-.footer-col h4 {
+.footer-col h3 {
   margin: 0 0 14px;
   font-size: 12px;
   font-weight: 600;
