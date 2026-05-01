@@ -514,6 +514,10 @@ h1 em {
   display: block;
 }
 
+.contact-socials {
+  margin-top: 20px;
+}
+
 a:focus-visible, .btn:focus-visible, .nav-toggle:focus-visible, button:focus-visible {
   outline: 2px solid var(--red);
   outline-offset: 2px;
